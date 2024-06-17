@@ -1,0 +1,1 @@
+{"lymphoid": ["T CD4", "T CD8", "Treg", "ILC", "B", "Plasma", "Zilionis T2"], "immune": ["T CD4", "T CD8", "Treg", "ILC", "B", "Plasma", "Zilionis T2", "macrophages", "dendritic", "Eosinophils", "Neutrophils", "MAST", "MDSC", "pDC"], "myeloid": ["macrophages", "dendritic", "Eosinophils", "Neutrophils", "MAST", "MDSC", "pDC"]}

@@ -1,0 +1,337 @@
+samples
+CD38.negative.naive.B.cell.2
+CD38.negative.naive.B.cell.3
+CD38.negative.naive.B.cell.1
+class.switched.memory.B.cell.3
+class.switched.memory.B.cell.1
+class.switched.memory.B.cell.2
+germinal.center.B.cell.1
+germinal.center.B.cell.2
+germinal.center.B.cell.3
+memory.B.cell.1
+naive.B.cell.2
+naive.B.cell.1
+naive.B.cell.3
+naive.B.cell.6
+naive.B.cell.5
+naive.B.cell.4
+plasma.cell.1
+plasma.cell.6
+plasma.cell.4
+plasma.cell.7
+plasma.cell.2
+plasma.cell.3
+plasma.cell.5
+unswitched.memory.B.cell.1
+articular.chondrocyte.of.knee.joint.1
+articular.chondrocyte.of.knee.joint.3
+articular.chondrocyte.of.knee.joint.2
+articular.chondrocyte.of.knee.joint.4
+mature.eosinophil.2
+mature.eosinophil.1
+hair.follicular.keratinocyte.3
+hair.follicular.keratinocyte.2
+hair.follicular.keratinocyte.4
+hair.follicular.keratinocyte.1
+keratinocyte.1
+keratinocyte.6
+keratinocyte.7
+keratinocyte.8
+keratinocyte.12
+keratinocyte.13
+keratinocyte.14
+keratinocyte.10
+keratinocyte.2
+keratinocyte.3
+keratinocyte.9
+keratinocyte.5
+keratinocyte.11
+keratinocyte.4
+alternatively.activated.macrophage.2
+alternatively.activated.macrophage.6
+alternatively.activated.macrophage.4
+alternatively.activated.macrophage.7
+alternatively.activated.macrophage.5
+alternatively.activated.macrophage.3
+alternatively.activated.macrophage.1
+CD14.positive..CD16.negative.classical.monocyte.4
+CD14.positive..CD16.negative.classical.monocyte.2
+CD14.positive..CD16.negative.classical.monocyte.1
+CD14.positive..CD16.negative.classical.monocyte.8
+CD14.positive..CD16.negative.classical.monocyte.3
+CD14.positive..CD16.negative.classical.monocyte.5
+CD14.positive..CD16.negative.classical.monocyte.7
+CD14.positive..CD16.negative.classical.monocyte.6
+alternatively.activated.macrophage.2
+alternatively.activated.macrophage.6
+alternatively.activated.macrophage.4
+alternatively.activated.macrophage.7
+alternatively.activated.macrophage.5
+alternatively.activated.macrophage.2
+alternatively.activated.macrophage.6
+alternatively.activated.macrophage.4
+alternatively.activated.macrophage.7
+alternatively.activated.macrophage.5
+alternatively.activated.macrophage.3
+macrophage.6
+macrophage.1
+macrophage.3
+macrophage.5
+macrophage.2
+macrophage.4
+monocyte.4
+monocyte.2
+monocyte.3
+monocyte.1
+monocyte.5
+monocyte.6
+melanocyte.of.skin.3
+melanocyte.of.skin.4
+melanocyte.of.skin.1
+melanocyte.of.skin.8
+melanocyte.of.skin.2
+melanocyte.of.skin.7
+melanocyte.of.skin.5
+melanocyte.of.skin.6
+mature.neutrophil.1
+mature.neutrophil.2
+mature.neutrophil.13
+mature.neutrophil.12
+mature.neutrophil.4
+mature.neutrophil.8
+mature.neutrophil.3
+mature.neutrophil.5
+mature.neutrophil.6
+mature.neutrophil.11
+mature.neutrophil.7
+mature.neutrophil.9
+mature.neutrophil.10
+subcutaneous.preadipocyte.2
+subcutaneous.preadipocyte.4
+subcutaneous.preadipocyte.1
+subcutaneous.preadipocyte.3
+cellTypeMajor.CAFs-donorID.CID4530
+cellTypeMajor.Endothelial-donorID.CID4066
+cellTypeMajor.Endothelial-donorID.CID4290A
+cellTypeMajor.Endothelial-donorID.CID44041
+cellTypeMajor.Endothelial-donorID.CID4463
+cellTypeMajor.Endothelial-donorID.CID4465
+cellTypeMajor.Endothelial-donorID.CID4471
+cellTypeMajor.Endothelial-donorID.CID4495
+cellTypeMajor.Endothelial-donorID.CID44971
+cellTypeMajor.Endothelial-donorID.CID44991
+cellTypeMajor.Endothelial-donorID.CID4513
+cellTypeMajor.Endothelial-donorID.CID4515
+cellTypeMajor.Endothelial-donorID.CID4523
+cellTypeMajor.Endothelial-donorID.CID4530
+cellTypeMajor.Endothelial-donorID.CID4535
+Minor subset.tDC1-Patient.p1
+Minor subset.tDC1-Patient.p2
+Minor subset.tDC1-Patient.p3
+Minor subset.tDC1-Patient.p4
+Minor subset.tDC1-Patient.p5
+Minor subset.tDC1-Patient.p6
+Minor subset.tDC1-Patient.p7
+Minor subset.tDC2-Patient.p1
+Minor subset.tDC2-Patient.p3
+Minor subset.tDC2-Patient.p4
+Minor subset.tDC2-Patient.p5
+Minor subset.tDC2-Patient.p6
+Minor subset.tDC2-Patient.p7
+Minor subset.tDC3-Patient.p1
+Minor subset.tDC3-Patient.p2
+Minor subset.tDC3-Patient.p3
+Minor subset.tDC3-Patient.p4
+Minor subset.tDC3-Patient.p5
+Minor subset.tDC3-Patient.p6
+Minor subset.tDC3-Patient.p7
+Minor subset.tMonoDC-Patient.p3
+Minor subset.tMonoDC-Patient.p4
+Minor subset.tMonoDC-Patient.p1
+Minor subset.tMonoDC-Patient.p2
+Minor subset.tMonoDC-Patient.p7
+Minor subset.tMonoDC-Patient.p5
+Minor subset.tMonoDC-Patient.p6
+Minor subset.tRBC-Patient.p1
+Minor subset.tRBC-Patient.p3
+Minor subset.tRBC-Patient.p4
+Minor subset.tNK1-Patient.p1
+Minor subset.tNK1-Patient.p2
+Minor subset.tNK1-Patient.p3
+Minor subset.tNK1-Patient.p4
+Minor subset.tNK1-Patient.p5
+Minor subset.tNK1-Patient.p6
+Minor subset.tNK1-Patient.p7
+Minor subset.tNK2-Patient.p1
+Minor subset.tNK2-Patient.p2
+Minor subset.tNK2-Patient.p3
+Minor subset.tNK2-Patient.p4
+Minor subset.tNK2-Patient.p5
+Minor subset.tNK2-Patient.p6
+Minor subset.tNK2-Patient.p7
+Minor subset.tMac1-Patient.p2
+Minor subset.tMac1-Patient.p1
+Minor subset.tMac1-Patient.p6
+Minor subset.tMac1-Patient.p3
+Minor subset.tMac1-Patient.p4
+Minor subset.tMac1-Patient.p5
+Minor subset.tMac2-Patient.p7
+Minor subset.tMac3-Patient.p1
+Minor subset.tMac3-Patient.p2
+Minor subset.tMac3-Patient.p3
+Minor subset.tMac3-Patient.p4
+Minor subset.tMac3-Patient.p5
+Minor subset.tMac1-Patient.p7
+Minor subset.tMac2-Patient.p1
+Minor subset.tMac2-Patient.p2
+Minor subset.tMac2-Patient.p3
+Minor subset.tMac2-Patient.p4
+Minor subset.tMac2-Patient.p5
+Minor subset.tMac2-Patient.p6
+Minor subset.tMac4-Patient.p6
+Minor subset.tMac4-Patient.p7
+Minor subset.tMac5-Patient.p1
+Minor subset.tMac5-Patient.p3
+Minor subset.tMac5-Patient.p4
+Minor subset.tMac5-Patient.p5
+Minor subset.tMac5-Patient.p6
+Minor subset.tMac5-Patient.p7
+Minor subset.tMac6-Patient.p1
+Minor subset.tMac6-Patient.p2
+Minor subset.tMac6-Patient.p3
+Minor subset.tMac6-Patient.p4
+Minor subset.tMac6-Patient.p5
+Minor subset.tMac6-Patient.p6
+Minor subset.tMac6-Patient.p7
+Minor subset.tMac7-Patient.p1
+Minor subset.tMac7-Patient.p3
+Minor subset.tMac7-Patient.p4
+Minor subset.tMac7-Patient.p5
+Minor subset.tMac7-Patient.p6
+Minor subset.tMac7-Patient.p7
+Minor subset.tMac8-Patient.p1
+Minor subset.tMac8-Patient.p2
+Minor subset.tMac8-Patient.p3
+Minor subset.tMac8-Patient.p4
+Minor subset.tMac8-Patient.p5
+Minor subset.tMac8-Patient.p6
+Minor subset.tMac8-Patient.p7
+Minor subset.tMac9-Patient.p1
+Minor subset.tMac9-Patient.p3
+Minor subset.tMac9-Patient.p4
+Minor subset.tMac9-Patient.p5
+Minor subset.tMac9-Patient.p6
+Minor subset.tMac3-Patient.p6
+Minor subset.tMac3-Patient.p7
+Minor subset.tMac4-Patient.p1
+Minor subset.tMac4-Patient.p2
+Minor subset.tMac4-Patient.p3
+Minor subset.tMac4-Patient.p4
+Minor subset.tMac4-Patient.p5
+Minor subset.tMacCycl-Patient.p7
+Minor subset.tMacCycl-Patient.p3
+Minor subset.tMacCycl-Patient.p4
+Minor subset.tMac9-Patient.p7
+Minor subset.tMacCycl-Patient.p1
+Minor subset.tMacCycl-Patient.p5
+Minor subset.tMacCycl-Patient.p6
+Minor subset.tMono1-Patient.p2
+Minor subset.tMono1-Patient.p3
+Minor subset.tMono1-Patient.p6
+Minor subset.tMono1-Patient.p7
+Minor subset.tMono1-Patient.p4
+Minor subset.tMono1-Patient.p5
+Minor subset.tMono1-Patient.p1
+Minor subset.tMono3-Patient.p1
+Minor subset.tMono3-Patient.p2
+Minor subset.tMono3-Patient.p3
+Minor subset.tMono3-Patient.p5
+Minor subset.tMono3-Patient.p6
+Minor subset.tMono3-Patient.p7
+Minor subset.tMono2-Patient.p1
+Minor subset.tMono2-Patient.p2
+Minor subset.tMono2-Patient.p3
+Minor subset.tMono2-Patient.p4
+Minor subset.tMono2-Patient.p5
+Minor subset.tMono2-Patient.p6
+Minor subset.tMono2-Patient.p7
+Minor subset.tMast1-Patient.p2
+Minor subset.tMast1-Patient.p3
+Minor subset.tMast1-Patient.p6
+Minor subset.tMast1-Patient.p7
+Minor subset.tMast1-Patient.p4
+Minor subset.tMast1-Patient.p5
+Minor subset.tMast1-Patient.p1
+Minor subset.tMast2-Patient.p3
+Minor subset.tMast2-Patient.p5
+Minor subset.tMast2-Patient.p1
+Minor subset.tMast2-Patient.p2
+Minor subset.tMast2-Patient.p6
+Minor subset.tMast2-Patient.p7
+Minor subset.tT4-Patient.p1
+Minor subset.tT4-Patient.p2
+Minor subset.tT4-Patient.p3
+Minor subset.tT4-Patient.p4
+Minor subset.tT4-Patient.p5
+Minor subset.tT4-Patient.p6
+Minor subset.tT4-Patient.p7
+Minor subset.tT6-Patient.p1
+Minor subset.tT6-Patient.p2
+Minor subset.tT6-Patient.p3
+Minor subset.tT6-Patient.p4
+Minor subset.tT6-Patient.p5
+Minor subset.tT6-Patient.p6
+Minor subset.tT6-Patient.p7
+Minor subset.tT7-Patient.p1
+Minor subset.tT7-Patient.p3
+Minor subset.tT7-Patient.p4
+Minor subset.tT7-Patient.p5
+Minor subset.tT7-Patient.p6
+Minor subset.tT7-Patient.p7
+Minor subset.tT1-Patient.p1
+Minor subset.tT1-Patient.p2
+Minor subset.tT1-Patient.p3
+Minor subset.tT1-Patient.p4
+Minor subset.tT1-Patient.p5
+Minor subset.tT1-Patient.p6
+Minor subset.tT1-Patient.p7
+Minor subset.tT3-Patient.p1
+Minor subset.tT3-Patient.p2
+Minor subset.tT3-Patient.p3
+Minor subset.tT3-Patient.p4
+Minor subset.tT3-Patient.p5
+Minor subset.tT3-Patient.p6
+Minor subset.tT3-Patient.p7
+Minor subset.tT2-Patient.p1
+Minor subset.tT2-Patient.p2
+Minor subset.tT2-Patient.p3
+Minor subset.tT2-Patient.p4
+Minor subset.tT2-Patient.p5
+Minor subset.tT2-Patient.p6
+Minor subset.tT2-Patient.p7
+Sample.P10_Normal-cellType.MDSC
+Sample.P2_Normal-cellType.MDSC
+Sample.P3_Normal-cellType.MDSC
+Sample.P5_Normal-cellType.MDSC
+Sample.P6_Normal-cellType.MDSC
+Sample.P7_Normal-cellType.MDSC
+Sample.P8_Normal-cellType.MDSC
+Sample.P9_Normal-cellType.MDSC
+Sample.P10_Normal-cellType.T CD4
+Sample.P2_Normal-cellType.T CD4
+Sample.P3_Normal-cellType.T CD4
+Sample.P5_Normal-cellType.T CD4
+Sample.P6_Normal-cellType.T CD4
+Sample.P7_Normal-cellType.T CD4
+Sample.P8_Normal-cellType.T CD4
+Sample.P9_Normal-cellType.T CD4
+Sample.P10_Normal-cellType.T CD8
+Sample.P2_Normal-cellType.T CD8
+Sample.P3_Normal-cellType.T CD8
+Sample.P5_Normal-cellType.T CD8
+Sample.P6_Normal-cellType.T CD8
+Sample.P7_Normal-cellType.T CD8
+Sample.P8_Normal-cellType.T CD8
+Sample.P9_Normal-cellType.T CD8
+Patient.p7-cell_type.ILC
+Patient.p4-cell_type.pDC

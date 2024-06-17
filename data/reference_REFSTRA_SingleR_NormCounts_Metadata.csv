@@ -1,0 +1,549 @@
+cell_type,sample_id,DB,samples,lineageGRINT,cellTypeGRINT,label.fine,label.main
+keratinocyte.1,keratinocyte,keratinocyte.1,ENCODE,keratinocyte.1,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.2,keratinocyte,keratinocyte.2,ENCODE,keratinocyte.2,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.3,keratinocyte,keratinocyte.3,ENCODE,keratinocyte.3,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.4,keratinocyte,keratinocyte.4,ENCODE,keratinocyte.4,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.5,keratinocyte,keratinocyte.5,ENCODE,keratinocyte.5,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.6,keratinocyte,keratinocyte.6,ENCODE,keratinocyte.6,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.7,keratinocyte,keratinocyte.7,ENCODE,keratinocyte.7,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.8,keratinocyte,keratinocyte.8,ENCODE,keratinocyte.8,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.12,keratinocyte,keratinocyte.12,ENCODE,keratinocyte.12,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.13,keratinocyte,keratinocyte.13,ENCODE,keratinocyte.13,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.14,keratinocyte,keratinocyte.14,ENCODE,keratinocyte.14,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.10,keratinocyte,keratinocyte.10,ENCODE,keratinocyte.10,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.11,keratinocyte,keratinocyte.11,ENCODE,keratinocyte.11,stromal,Keratinocytes,Keratinocytes,stromal
+keratinocyte.9,keratinocyte,keratinocyte.9,ENCODE,keratinocyte.9,stromal,Keratinocytes,Keratinocytes,stromal
+kidney.epithelial.cell.3,kidney.epithelial.cell,kidney.epithelial.cell.3,ENCODE,kidney.epithelial.cell.3,stromal,epithelial,epithelial,stromal
+kidney.epithelial.cell.4,kidney.epithelial.cell,kidney.epithelial.cell.4,ENCODE,kidney.epithelial.cell.4,stromal,epithelial,epithelial,stromal
+kidney.epithelial.cell.2,kidney.epithelial.cell,kidney.epithelial.cell.2,ENCODE,kidney.epithelial.cell.2,stromal,epithelial,epithelial,stromal
+kidney.epithelial.cell.1,kidney.epithelial.cell,kidney.epithelial.cell.1,ENCODE,kidney.epithelial.cell.1,stromal,epithelial,epithelial,stromal
+mesenchymal.stem.cell.of.Wharton.s.jelly.3,mesenchymal.stem.cell.of.Wharton.s.jelly,mesenchymal.stem.cell.of.Wharton.s.jelly.3,ENCODE,mesenchymal.stem.cell.of.Wharton.s.jelly.3,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.Wharton.s.jelly.2,mesenchymal.stem.cell.of.Wharton.s.jelly,mesenchymal.stem.cell.of.Wharton.s.jelly.2,ENCODE,mesenchymal.stem.cell.of.Wharton.s.jelly.2,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.Wharton.s.jelly.4,mesenchymal.stem.cell.of.Wharton.s.jelly,mesenchymal.stem.cell.of.Wharton.s.jelly.4,ENCODE,mesenchymal.stem.cell.of.Wharton.s.jelly.4,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.Wharton.s.jelly.1,mesenchymal.stem.cell.of.Wharton.s.jelly,mesenchymal.stem.cell.of.Wharton.s.jelly.1,ENCODE,mesenchymal.stem.cell.of.Wharton.s.jelly.1,HSC,MSC,MSC,HSC
+hair.follicular.keratinocyte.4,hair.follicular.keratinocyte,hair.follicular.keratinocyte.4,ENCODE,hair.follicular.keratinocyte.4,stromal,Keratinocytes,Keratinocytes,stromal
+hair.follicular.keratinocyte.2,hair.follicular.keratinocyte,hair.follicular.keratinocyte.2,ENCODE,hair.follicular.keratinocyte.2,stromal,Keratinocytes,Keratinocytes,stromal
+hair.follicular.keratinocyte.1,hair.follicular.keratinocyte,hair.follicular.keratinocyte.1,ENCODE,hair.follicular.keratinocyte.1,stromal,Keratinocytes,Keratinocytes,stromal
+hair.follicular.keratinocyte.3,hair.follicular.keratinocyte,hair.follicular.keratinocyte.3,ENCODE,hair.follicular.keratinocyte.3,stromal,Keratinocytes,Keratinocytes,stromal
+mammary.epithelial.cell.1,mammary.epithelial.cell,mammary.epithelial.cell.1,ENCODE,mammary.epithelial.cell.1,stromal,epithelial,epithelial,stromal
+mammary.epithelial.cell.3,mammary.epithelial.cell,mammary.epithelial.cell.3,ENCODE,mammary.epithelial.cell.3,stromal,epithelial,epithelial,stromal
+mammary.epithelial.cell.4,mammary.epithelial.cell,mammary.epithelial.cell.4,ENCODE,mammary.epithelial.cell.4,stromal,epithelial,epithelial,stromal
+mammary.epithelial.cell.2,mammary.epithelial.cell,mammary.epithelial.cell.2,ENCODE,mammary.epithelial.cell.2,stromal,epithelial,epithelial,stromal
+mammary.epithelial.cell.5,mammary.epithelial.cell,mammary.epithelial.cell.5,ENCODE,mammary.epithelial.cell.5,stromal,epithelial,epithelial,stromal
+mammary.epithelial.cell.6,mammary.epithelial.cell,mammary.epithelial.cell.6,ENCODE,mammary.epithelial.cell.6,stromal,epithelial,epithelial,stromal
+Purkinje.cell.3,Purkinje.cell,Purkinje.cell.3,ENCODE,Purkinje.cell.3,Neurons,Neurons,Neurons,Neurons
+Purkinje.cell.4,Purkinje.cell,Purkinje.cell.4,ENCODE,Purkinje.cell.4,Neurons,Neurons,Neurons,Neurons
+Purkinje.cell.2,Purkinje.cell,Purkinje.cell.2,ENCODE,Purkinje.cell.2,Neurons,Neurons,Neurons,Neurons
+Purkinje.cell.1,Purkinje.cell,Purkinje.cell.1,ENCODE,Purkinje.cell.1,Neurons,Neurons,Neurons,Neurons
+mesenchymal.stem.cell.of.the.bone.marrow.1.1,mesenchymal.stem.cell.of.the.bone.marrow,mesenchymal.stem.cell.of.the.bone.marrow.1,BLUEPRINT,mesenchymal.stem.cell.of.the.bone.marrow.1.1,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.the.bone.marrow.1,mesenchymal.stem.cell.of.the.bone.marrow,mesenchymal.stem.cell.of.the.bone.marrow.1,ENCODE,mesenchymal.stem.cell.of.the.bone.marrow.1,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.the.bone.marrow.3,mesenchymal.stem.cell.of.the.bone.marrow,mesenchymal.stem.cell.of.the.bone.marrow.3,ENCODE,mesenchymal.stem.cell.of.the.bone.marrow.3,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.the.bone.marrow.2.1,mesenchymal.stem.cell.of.the.bone.marrow,mesenchymal.stem.cell.of.the.bone.marrow.2,BLUEPRINT,mesenchymal.stem.cell.of.the.bone.marrow.2.1,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.the.bone.marrow.4,mesenchymal.stem.cell.of.the.bone.marrow,mesenchymal.stem.cell.of.the.bone.marrow.4,ENCODE,mesenchymal.stem.cell.of.the.bone.marrow.4,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.the.bone.marrow.2,mesenchymal.stem.cell.of.the.bone.marrow,mesenchymal.stem.cell.of.the.bone.marrow.2,ENCODE,mesenchymal.stem.cell.of.the.bone.marrow.2,HSC,MSC,MSC,HSC
+thoracic.aorta.endothelial.cell.3,thoracic.aorta.endothelial.cell,thoracic.aorta.endothelial.cell.3,ENCODE,thoracic.aorta.endothelial.cell.3,stromal,endothelial,endothelial,stromal
+thoracic.aorta.endothelial.cell.2,thoracic.aorta.endothelial.cell,thoracic.aorta.endothelial.cell.2,ENCODE,thoracic.aorta.endothelial.cell.2,stromal,endothelial,endothelial,stromal
+thoracic.aorta.endothelial.cell.1,thoracic.aorta.endothelial.cell,thoracic.aorta.endothelial.cell.1,ENCODE,thoracic.aorta.endothelial.cell.1,stromal,endothelial,endothelial,stromal
+thoracic.aorta.endothelial.cell.4,thoracic.aorta.endothelial.cell,thoracic.aorta.endothelial.cell.4,ENCODE,thoracic.aorta.endothelial.cell.4,stromal,endothelial,endothelial,stromal
+CD14.positive.monocyte.5,CD14.positive.monocyte,CD14.positive.monocyte.5,ENCODE,CD14.positive.monocyte.5,myeloid,macrophages,monocyte,myeloid
+CD14.positive.monocyte.1,CD14.positive.monocyte,CD14.positive.monocyte.1,ENCODE,CD14.positive.monocyte.1,myeloid,macrophages,monocyte,myeloid
+CD14.positive.monocyte.4,CD14.positive.monocyte,CD14.positive.monocyte.4,ENCODE,CD14.positive.monocyte.4,myeloid,macrophages,monocyte,myeloid
+CD14.positive.monocyte.2,CD14.positive.monocyte,CD14.positive.monocyte.2,ENCODE,CD14.positive.monocyte.2,myeloid,macrophages,monocyte,myeloid
+CD14.positive.monocyte.3,CD14.positive.monocyte,CD14.positive.monocyte.3,ENCODE,CD14.positive.monocyte.3,myeloid,macrophages,monocyte,myeloid
+melanocyte.of.skin.3,melanocyte.of.skin,melanocyte.of.skin.3,ENCODE,melanocyte.of.skin.3,stromal,Melanocyte,Melanocyte,stromal
+melanocyte.of.skin.4,melanocyte.of.skin,melanocyte.of.skin.4,ENCODE,melanocyte.of.skin.4,stromal,Melanocyte,Melanocyte,stromal
+melanocyte.of.skin.2,melanocyte.of.skin,melanocyte.of.skin.2,ENCODE,melanocyte.of.skin.2,stromal,Melanocyte,Melanocyte,stromal
+melanocyte.of.skin.1,melanocyte.of.skin,melanocyte.of.skin.1,ENCODE,melanocyte.of.skin.1,stromal,Melanocyte,Melanocyte,stromal
+melanocyte.of.skin.8,melanocyte.of.skin,melanocyte.of.skin.8,ENCODE,melanocyte.of.skin.8,stromal,Melanocyte,Melanocyte,stromal
+melanocyte.of.skin.5,melanocyte.of.skin,melanocyte.of.skin.5,ENCODE,melanocyte.of.skin.5,stromal,Melanocyte,Melanocyte,stromal
+melanocyte.of.skin.7,melanocyte.of.skin,melanocyte.of.skin.7,ENCODE,melanocyte.of.skin.7,stromal,Melanocyte,Melanocyte,stromal
+melanocyte.of.skin.6,melanocyte.of.skin,melanocyte.of.skin.6,ENCODE,melanocyte.of.skin.6,stromal,Melanocyte,Melanocyte,stromal
+subcutaneous.preadipocyte.2,subcutaneous.preadipocyte,subcutaneous.preadipocyte.2,ENCODE,subcutaneous.preadipocyte.2,stromal,pre-adipocytes,adipocytes,stromal
+subcutaneous.preadipocyte.1,subcutaneous.preadipocyte,subcutaneous.preadipocyte.1,ENCODE,subcutaneous.preadipocyte.1,stromal,pre-adipocytes,adipocytes,stromal
+subcutaneous.preadipocyte.4,subcutaneous.preadipocyte,subcutaneous.preadipocyte.4,ENCODE,subcutaneous.preadipocyte.4,stromal,pre-adipocytes,adipocytes,stromal
+subcutaneous.preadipocyte.3,subcutaneous.preadipocyte,subcutaneous.preadipocyte.3,ENCODE,subcutaneous.preadipocyte.3,stromal,pre-adipocytes,adipocytes,stromal
+articular.chondrocyte.of.knee.joint.3,articular.chondrocyte.of.knee.joint,articular.chondrocyte.of.knee.joint.3,ENCODE,articular.chondrocyte.of.knee.joint.3,stromal,Chondrocytes,Chondrocytes,stromal
+articular.chondrocyte.of.knee.joint.1,articular.chondrocyte.of.knee.joint,articular.chondrocyte.of.knee.joint.1,ENCODE,articular.chondrocyte.of.knee.joint.1,stromal,Chondrocytes,Chondrocytes,stromal
+articular.chondrocyte.of.knee.joint.2,articular.chondrocyte.of.knee.joint,articular.chondrocyte.of.knee.joint.2,ENCODE,articular.chondrocyte.of.knee.joint.2,stromal,Chondrocytes,Chondrocytes,stromal
+articular.chondrocyte.of.knee.joint.4,articular.chondrocyte.of.knee.joint,articular.chondrocyte.of.knee.joint.4,ENCODE,articular.chondrocyte.of.knee.joint.4,stromal,Chondrocytes,Chondrocytes,stromal
+mesenchymal.stem.cell.of.adipose.1,mesenchymal.stem.cell.of.adipose,mesenchymal.stem.cell.of.adipose.1,ENCODE,mesenchymal.stem.cell.of.adipose.1,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.adipose.2,mesenchymal.stem.cell.of.adipose,mesenchymal.stem.cell.of.adipose.2,ENCODE,mesenchymal.stem.cell.of.adipose.2,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.adipose.4,mesenchymal.stem.cell.of.adipose,mesenchymal.stem.cell.of.adipose.4,ENCODE,mesenchymal.stem.cell.of.adipose.4,HSC,MSC,MSC,HSC
+mesenchymal.stem.cell.of.adipose.3,mesenchymal.stem.cell.of.adipose,mesenchymal.stem.cell.of.adipose.3,ENCODE,mesenchymal.stem.cell.of.adipose.3,HSC,MSC,MSC,HSC
+smooth.muscle.cell.of.the.pulmonary.artery.2,smooth.muscle.cell.of.the.pulmonary.artery,smooth.muscle.cell.of.the.pulmonary.artery.2,ENCODE,smooth.muscle.cell.of.the.pulmonary.artery.2,stromal,Smooth muscle,Smooth muscle,stromal
+smooth.muscle.cell.of.the.pulmonary.artery.4,smooth.muscle.cell.of.the.pulmonary.artery,smooth.muscle.cell.of.the.pulmonary.artery.4,ENCODE,smooth.muscle.cell.of.the.pulmonary.artery.4,stromal,Smooth muscle,Smooth muscle,stromal
+smooth.muscle.cell.of.the.pulmonary.artery.3,smooth.muscle.cell.of.the.pulmonary.artery,smooth.muscle.cell.of.the.pulmonary.artery.3,ENCODE,smooth.muscle.cell.of.the.pulmonary.artery.3,stromal,Smooth muscle,Smooth muscle,stromal
+smooth.muscle.cell.of.the.pulmonary.artery.1,smooth.muscle.cell.of.the.pulmonary.artery,smooth.muscle.cell.of.the.pulmonary.artery.1,ENCODE,smooth.muscle.cell.of.the.pulmonary.artery.1,stromal,Smooth muscle,Smooth muscle,stromal
+osteoblast.4,osteoblast,osteoblast.4,ENCODE,osteoblast.4,stromal,osteoblast,osteoblast,stromal
+osteoblast.1,osteoblast,osteoblast.1,ENCODE,osteoblast.1,stromal,osteoblast,osteoblast,stromal
+osteoblast.3,osteoblast,osteoblast.3,ENCODE,osteoblast.3,stromal,osteoblast,osteoblast,stromal
+osteoblast.2,osteoblast,osteoblast.2,ENCODE,osteoblast.2,stromal,osteoblast,osteoblast,stromal
+mature.neutrophil.2,mature.neutrophil,mature.neutrophil.2,BLUEPRINT,mature.neutrophil.2,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.13,mature.neutrophil,mature.neutrophil.13,BLUEPRINT,mature.neutrophil.13,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.1,mature.neutrophil,mature.neutrophil.1,BLUEPRINT,mature.neutrophil.1,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.8,mature.neutrophil,mature.neutrophil.8,BLUEPRINT,mature.neutrophil.8,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.3,mature.neutrophil,mature.neutrophil.3,BLUEPRINT,mature.neutrophil.3,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.12,mature.neutrophil,mature.neutrophil.12,BLUEPRINT,mature.neutrophil.12,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.4,mature.neutrophil,mature.neutrophil.4,BLUEPRINT,mature.neutrophil.4,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.6,mature.neutrophil,mature.neutrophil.6,BLUEPRINT,mature.neutrophil.6,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.11,mature.neutrophil,mature.neutrophil.11,BLUEPRINT,mature.neutrophil.11,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.5,mature.neutrophil,mature.neutrophil.5,BLUEPRINT,mature.neutrophil.5,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.9,mature.neutrophil,mature.neutrophil.9,BLUEPRINT,mature.neutrophil.9,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.10,mature.neutrophil,mature.neutrophil.10,BLUEPRINT,mature.neutrophil.10,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+mature.neutrophil.7,mature.neutrophil,mature.neutrophil.7,BLUEPRINT,mature.neutrophil.7,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+CD14.positive..CD16.negative.classical.monocyte.4,CD14.positive..CD16.negative.classical.monocyte,CD14.positive..CD16.negative.classical.monocyte.4,BLUEPRINT,CD14.positive..CD16.negative.classical.monocyte.4,myeloid,macrophages,monocyte,myeloid
+CD14.positive..CD16.negative.classical.monocyte.5,CD14.positive..CD16.negative.classical.monocyte,CD14.positive..CD16.negative.classical.monocyte.5,BLUEPRINT,CD14.positive..CD16.negative.classical.monocyte.5,myeloid,macrophages,monocyte,myeloid
+CD14.positive..CD16.negative.classical.monocyte.3,CD14.positive..CD16.negative.classical.monocyte,CD14.positive..CD16.negative.classical.monocyte.3,BLUEPRINT,CD14.positive..CD16.negative.classical.monocyte.3,myeloid,macrophages,monocyte,myeloid
+CD14.positive..CD16.negative.classical.monocyte.1,CD14.positive..CD16.negative.classical.monocyte,CD14.positive..CD16.negative.classical.monocyte.1,BLUEPRINT,CD14.positive..CD16.negative.classical.monocyte.1,myeloid,macrophages,monocyte,myeloid
+CD14.positive..CD16.negative.classical.monocyte.8,CD14.positive..CD16.negative.classical.monocyte,CD14.positive..CD16.negative.classical.monocyte.8,BLUEPRINT,CD14.positive..CD16.negative.classical.monocyte.8,myeloid,macrophages,monocyte,myeloid
+CD14.positive..CD16.negative.classical.monocyte.2,CD14.positive..CD16.negative.classical.monocyte,CD14.positive..CD16.negative.classical.monocyte.2,BLUEPRINT,CD14.positive..CD16.negative.classical.monocyte.2,myeloid,macrophages,monocyte,myeloid
+CD14.positive..CD16.negative.classical.monocyte.6,CD14.positive..CD16.negative.classical.monocyte,CD14.positive..CD16.negative.classical.monocyte.6,BLUEPRINT,CD14.positive..CD16.negative.classical.monocyte.6,myeloid,macrophages,monocyte,myeloid
+CD14.positive..CD16.negative.classical.monocyte.7,CD14.positive..CD16.negative.classical.monocyte,CD14.positive..CD16.negative.classical.monocyte.7,BLUEPRINT,CD14.positive..CD16.negative.classical.monocyte.7,myeloid,macrophages,monocyte,myeloid
+common.lymphoid.progenitor.3,common.lymphoid.progenitor,common.lymphoid.progenitor.3,BLUEPRINT,common.lymphoid.progenitor.3,HSC,CLP,CLP,HSC
+common.lymphoid.progenitor.2,common.lymphoid.progenitor,common.lymphoid.progenitor.2,BLUEPRINT,common.lymphoid.progenitor.2,HSC,CLP,CLP,HSC
+common.lymphoid.progenitor.1,common.lymphoid.progenitor,common.lymphoid.progenitor.1,BLUEPRINT,common.lymphoid.progenitor.1,HSC,CLP,CLP,HSC
+common.lymphoid.progenitor.4,common.lymphoid.progenitor,common.lymphoid.progenitor.4,BLUEPRINT,common.lymphoid.progenitor.4,HSC,CLP,CLP,HSC
+common.lymphoid.progenitor.5,common.lymphoid.progenitor,common.lymphoid.progenitor.5,BLUEPRINT,common.lymphoid.progenitor.5,HSC,CLP,CLP,HSC
+hematopoietic.multipotent.progenitor.cell.1,hematopoietic.multipotent.progenitor.cell,hematopoietic.multipotent.progenitor.cell.1,BLUEPRINT,hematopoietic.multipotent.progenitor.cell.1,HSC,HSC,HSC,HSC
+hematopoietic.multipotent.progenitor.cell.2,hematopoietic.multipotent.progenitor.cell,hematopoietic.multipotent.progenitor.cell.2,BLUEPRINT,hematopoietic.multipotent.progenitor.cell.2,HSC,HSC,HSC,HSC
+hematopoietic.multipotent.progenitor.cell.3,hematopoietic.multipotent.progenitor.cell,hematopoietic.multipotent.progenitor.cell.3,BLUEPRINT,hematopoietic.multipotent.progenitor.cell.3,HSC,HSC,HSC,HSC
+hematopoietic.stem.cell.1,hematopoietic.stem.cell,hematopoietic.stem.cell.1,BLUEPRINT,hematopoietic.stem.cell.1,HSC,HSC,HSC,HSC
+hematopoietic.stem.cell.2,hematopoietic.stem.cell,hematopoietic.stem.cell.2,BLUEPRINT,hematopoietic.stem.cell.2,HSC,HSC,HSC,HSC
+hematopoietic.stem.cell.5,hematopoietic.stem.cell,hematopoietic.stem.cell.5,BLUEPRINT,hematopoietic.stem.cell.5,HSC,HSC,HSC,HSC
+hematopoietic.stem.cell.4,hematopoietic.stem.cell,hematopoietic.stem.cell.4,BLUEPRINT,hematopoietic.stem.cell.4,HSC,HSC,HSC,HSC
+hematopoietic.stem.cell.3,hematopoietic.stem.cell,hematopoietic.stem.cell.3,BLUEPRINT,hematopoietic.stem.cell.3,HSC,HSC,HSC,HSC
+hematopoietic.stem.cell.6,hematopoietic.stem.cell,hematopoietic.stem.cell.6,BLUEPRINT,hematopoietic.stem.cell.6,HSC,HSC,HSC,HSC
+CD38.negative.naive.B.cell.2,CD38.negative.naive.B.cell,CD38.negative.naive.B.cell.2,BLUEPRINT,CD38.negative.naive.B.cell.2,lymphoid,B,B,lymphoid
+CD38.negative.naive.B.cell.3,CD38.negative.naive.B.cell,CD38.negative.naive.B.cell.3,BLUEPRINT,CD38.negative.naive.B.cell.3,lymphoid,B,B,lymphoid
+CD38.negative.naive.B.cell.1,CD38.negative.naive.B.cell,CD38.negative.naive.B.cell.1,BLUEPRINT,CD38.negative.naive.B.cell.1,lymphoid,B,B,lymphoid
+CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.2,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.2,BLUEPRINT,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.2,HSC,Megakaryocytes,Megakaryocytes,HSC
+CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.3,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.3,BLUEPRINT,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.3,HSC,Megakaryocytes,Megakaryocytes,HSC
+CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.4,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.4,BLUEPRINT,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.4,HSC,Megakaryocytes,Megakaryocytes,HSC
+CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.5,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.5,BLUEPRINT,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.5,HSC,Megakaryocytes,Megakaryocytes,HSC
+CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.1,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.1,BLUEPRINT,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.1,HSC,Megakaryocytes,Megakaryocytes,HSC
+CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.6,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.6,BLUEPRINT,CD34.negative..CD41.positive..CD42.positive.megakaryocyte.cell.6,HSC,Megakaryocytes,Megakaryocytes,HSC
+common.myeloid.progenitor.2,common.myeloid.progenitor,common.myeloid.progenitor.2,BLUEPRINT,common.myeloid.progenitor.2,HSC,CMP,CMP,HSC
+common.myeloid.progenitor.1,common.myeloid.progenitor,common.myeloid.progenitor.1,BLUEPRINT,common.myeloid.progenitor.1,HSC,CMP,CMP,HSC
+common.myeloid.progenitor.3,common.myeloid.progenitor,common.myeloid.progenitor.3,BLUEPRINT,common.myeloid.progenitor.3,HSC,CMP,CMP,HSC
+inflammatory.macrophage.2,inflammatory.macrophage,inflammatory.macrophage.2,BLUEPRINT,inflammatory.macrophage.2,myeloid,macrophages,macrophages,myeloid
+inflammatory.macrophage.3,inflammatory.macrophage,inflammatory.macrophage.3,BLUEPRINT,inflammatory.macrophage.3,myeloid,macrophages,macrophages,myeloid
+inflammatory.macrophage.1,inflammatory.macrophage,inflammatory.macrophage.1,BLUEPRINT,inflammatory.macrophage.1,myeloid,macrophages,macrophages,myeloid
+inflammatory.macrophage.5,inflammatory.macrophage,inflammatory.macrophage.5,BLUEPRINT,inflammatory.macrophage.5,myeloid,macrophages,macrophages,myeloid
+inflammatory.macrophage.6,inflammatory.macrophage,inflammatory.macrophage.6,BLUEPRINT,inflammatory.macrophage.6,myeloid,macrophages,macrophages,myeloid
+inflammatory.macrophage.4,inflammatory.macrophage,inflammatory.macrophage.4,BLUEPRINT,inflammatory.macrophage.4,myeloid,macrophages,macrophages,myeloid
+macrophage.1,macrophage,macrophage.1,BLUEPRINT,macrophage.1,myeloid,macrophages,macrophages,myeloid
+macrophage.5,macrophage,macrophage.5,BLUEPRINT,macrophage.5,myeloid,macrophages,macrophages,myeloid
+macrophage.6,macrophage,macrophage.6,BLUEPRINT,macrophage.6,myeloid,macrophages,macrophages,myeloid
+macrophage.2,macrophage,macrophage.2,BLUEPRINT,macrophage.2,myeloid,macrophages,macrophages,myeloid
+macrophage.4,macrophage,macrophage.4,BLUEPRINT,macrophage.4,myeloid,macrophages,macrophages,myeloid
+macrophage.3,macrophage,macrophage.3,BLUEPRINT,macrophage.3,myeloid,macrophages,macrophages,myeloid
+alternatively.activated.macrophage.2,alternatively.activated.macrophage,alternatively.activated.macrophage.2,BLUEPRINT,alternatively.activated.macrophage.2,myeloid,macrophages,macrophages,myeloid
+alternatively.activated.macrophage.6,alternatively.activated.macrophage,alternatively.activated.macrophage.6,BLUEPRINT,alternatively.activated.macrophage.6,myeloid,macrophages,macrophages,myeloid
+alternatively.activated.macrophage.3,alternatively.activated.macrophage,alternatively.activated.macrophage.3,BLUEPRINT,alternatively.activated.macrophage.3,myeloid,macrophages,macrophages,myeloid
+alternatively.activated.macrophage.4,alternatively.activated.macrophage,alternatively.activated.macrophage.4,BLUEPRINT,alternatively.activated.macrophage.4,myeloid,macrophages,macrophages,myeloid
+alternatively.activated.macrophage.5,alternatively.activated.macrophage,alternatively.activated.macrophage.5,BLUEPRINT,alternatively.activated.macrophage.5,myeloid,macrophages,macrophages,myeloid
+alternatively.activated.macrophage.7,alternatively.activated.macrophage,alternatively.activated.macrophage.7,BLUEPRINT,alternatively.activated.macrophage.7,myeloid,macrophages,macrophages,myeloid
+alternatively.activated.macrophage.1,alternatively.activated.macrophage,alternatively.activated.macrophage.1,BLUEPRINT,alternatively.activated.macrophage.1,myeloid,macrophages,macrophages,myeloid
+conventional.dendritic.cell.1,conventional.dendritic.cell,conventional.dendritic.cell.1,BLUEPRINT,conventional.dendritic.cell.1,myeloid,dendritic,dendritic,myeloid
+conventional.dendritic.cell.2,conventional.dendritic.cell,conventional.dendritic.cell.2,BLUEPRINT,conventional.dendritic.cell.2,myeloid,dendritic,dendritic,myeloid
+plasma.cell.4,plasma.cell,plasma.cell.4,BLUEPRINT,plasma.cell.4,lymphoid,B,Plasma,lymphoid
+plasma.cell.1,plasma.cell,plasma.cell.1,BLUEPRINT,plasma.cell.1,lymphoid,B,Plasma,lymphoid
+plasma.cell.6,plasma.cell,plasma.cell.6,BLUEPRINT,plasma.cell.6,lymphoid,B,Plasma,lymphoid
+plasma.cell.2,plasma.cell,plasma.cell.2,BLUEPRINT,plasma.cell.2,lymphoid,B,Plasma,lymphoid
+plasma.cell.7,plasma.cell,plasma.cell.7,BLUEPRINT,plasma.cell.7,lymphoid,B,Plasma,lymphoid
+plasma.cell.5,plasma.cell,plasma.cell.5,BLUEPRINT,plasma.cell.5,lymphoid,B,Plasma,lymphoid
+plasma.cell.3,plasma.cell,plasma.cell.3,BLUEPRINT,plasma.cell.3,lymphoid,B,Plasma,lymphoid
+germinal.center.B.cell.2,germinal.center.B.cell,germinal.center.B.cell.2,BLUEPRINT,germinal.center.B.cell.2,lymphoid,B,B,lymphoid
+germinal.center.B.cell.3,germinal.center.B.cell,germinal.center.B.cell.3,BLUEPRINT,germinal.center.B.cell.3,lymphoid,B,B,lymphoid
+germinal.center.B.cell.1,germinal.center.B.cell,germinal.center.B.cell.1,BLUEPRINT,germinal.center.B.cell.1,lymphoid,B,B,lymphoid
+naive.B.cell.2,naive.B.cell,naive.B.cell.2,BLUEPRINT,naive.B.cell.2,lymphoid,B,B,lymphoid
+naive.B.cell.1,naive.B.cell,naive.B.cell.1,BLUEPRINT,naive.B.cell.1,lymphoid,B,B,lymphoid
+naive.B.cell.6,naive.B.cell,naive.B.cell.6,BLUEPRINT,naive.B.cell.6,lymphoid,B,B,lymphoid
+naive.B.cell.5,naive.B.cell,naive.B.cell.5,BLUEPRINT,naive.B.cell.5,lymphoid,B,B,lymphoid
+naive.B.cell.3,naive.B.cell,naive.B.cell.3,BLUEPRINT,naive.B.cell.3,lymphoid,B,B,lymphoid
+naive.B.cell.4,naive.B.cell,naive.B.cell.4,BLUEPRINT,naive.B.cell.4,lymphoid,B,B,lymphoid
+class.switched.memory.B.cell.3,class.switched.memory.B.cell,class.switched.memory.B.cell.3,BLUEPRINT,class.switched.memory.B.cell.3,lymphoid,B,B,lymphoid
+class.switched.memory.B.cell.1,class.switched.memory.B.cell,class.switched.memory.B.cell.1,BLUEPRINT,class.switched.memory.B.cell.1,lymphoid,B,B,lymphoid
+class.switched.memory.B.cell.2,class.switched.memory.B.cell,class.switched.memory.B.cell.2,BLUEPRINT,class.switched.memory.B.cell.2,lymphoid,B,B,lymphoid
+memory.B.cell.1,memory.B.cell,memory.B.cell.1,BLUEPRINT,memory.B.cell.1,lymphoid,B,B,lymphoid
+monocyte.4,monocyte,monocyte.4,BLUEPRINT,monocyte.4,myeloid,macrophages,monocyte,myeloid
+monocyte.3,monocyte,monocyte.3,BLUEPRINT,monocyte.3,myeloid,macrophages,monocyte,myeloid
+monocyte.2,monocyte,monocyte.2,BLUEPRINT,monocyte.2,myeloid,macrophages,monocyte,myeloid
+monocyte.6,monocyte,monocyte.6,BLUEPRINT,monocyte.6,myeloid,macrophages,monocyte,myeloid
+monocyte.1,monocyte,monocyte.1,BLUEPRINT,monocyte.1,myeloid,macrophages,monocyte,myeloid
+monocyte.5,monocyte,monocyte.5,BLUEPRINT,monocyte.5,myeloid,macrophages,monocyte,myeloid
+unswitched.memory.B.cell.1,unswitched.memory.B.cell,unswitched.memory.B.cell.1,BLUEPRINT,unswitched.memory.B.cell.1,lymphoid,B,B,lymphoid
+mature.eosinophil.2,mature.eosinophil,mature.eosinophil.2,BLUEPRINT,mature.eosinophil.2,Eosinophils,Eosinophils,Eosinophils,Eosinophils
+mature.eosinophil.1,mature.eosinophil,mature.eosinophil.1,BLUEPRINT,mature.eosinophil.1,Eosinophils,Eosinophils,Eosinophils,Eosinophils
+Minor subset.tB-Patient.p1,B.cells,Minor subset.tB-Patient.p1,Zilionis2019,Minor subset.tB-Patient.p1,lymphoid,B,B,lymphoid
+Minor subset.tB-Patient.p2,B.cells,Minor subset.tB-Patient.p2,Zilionis2019,Minor subset.tB-Patient.p2,lymphoid,B,B,lymphoid
+Minor subset.tB-Patient.p3,B.cells,Minor subset.tB-Patient.p3,Zilionis2019,Minor subset.tB-Patient.p3,lymphoid,B,B,lymphoid
+Minor subset.tB-Patient.p4,B.cells,Minor subset.tB-Patient.p4,Zilionis2019,Minor subset.tB-Patient.p4,lymphoid,B,B,lymphoid
+Minor subset.tB-Patient.p5,B.cells,Minor subset.tB-Patient.p5,Zilionis2019,Minor subset.tB-Patient.p5,lymphoid,B,B,lymphoid
+Minor subset.tB-Patient.p6,B.cells,Minor subset.tB-Patient.p6,Zilionis2019,Minor subset.tB-Patient.p6,lymphoid,B,B,lymphoid
+Minor subset.tB-Patient.p7,B.cells,Minor subset.tB-Patient.p7,Zilionis2019,Minor subset.tB-Patient.p7,lymphoid,B,B,lymphoid
+Minor subset.tDC1-Patient.p1,DC,Minor subset.tDC1-Patient.p1,Zilionis2019,Minor subset.tDC1-Patient.p1,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC1-Patient.p2,DC,Minor subset.tDC1-Patient.p2,Zilionis2019,Minor subset.tDC1-Patient.p2,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC1-Patient.p3,DC,Minor subset.tDC1-Patient.p3,Zilionis2019,Minor subset.tDC1-Patient.p3,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC1-Patient.p4,DC,Minor subset.tDC1-Patient.p4,Zilionis2019,Minor subset.tDC1-Patient.p4,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC1-Patient.p5,DC,Minor subset.tDC1-Patient.p5,Zilionis2019,Minor subset.tDC1-Patient.p5,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC1-Patient.p6,DC,Minor subset.tDC1-Patient.p6,Zilionis2019,Minor subset.tDC1-Patient.p6,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC1-Patient.p7,DC,Minor subset.tDC1-Patient.p7,Zilionis2019,Minor subset.tDC1-Patient.p7,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC2-Patient.p1,DC,Minor subset.tDC2-Patient.p1,Zilionis2019,Minor subset.tDC2-Patient.p1,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC2-Patient.p3,DC,Minor subset.tDC2-Patient.p3,Zilionis2019,Minor subset.tDC2-Patient.p3,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC2-Patient.p4,DC,Minor subset.tDC2-Patient.p4,Zilionis2019,Minor subset.tDC2-Patient.p4,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC2-Patient.p5,DC,Minor subset.tDC2-Patient.p5,Zilionis2019,Minor subset.tDC2-Patient.p5,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC2-Patient.p6,DC,Minor subset.tDC2-Patient.p6,Zilionis2019,Minor subset.tDC2-Patient.p6,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC2-Patient.p7,DC,Minor subset.tDC2-Patient.p7,Zilionis2019,Minor subset.tDC2-Patient.p7,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC3-Patient.p1,DC,Minor subset.tDC3-Patient.p1,Zilionis2019,Minor subset.tDC3-Patient.p1,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC3-Patient.p2,DC,Minor subset.tDC3-Patient.p2,Zilionis2019,Minor subset.tDC3-Patient.p2,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC3-Patient.p3,DC,Minor subset.tDC3-Patient.p3,Zilionis2019,Minor subset.tDC3-Patient.p3,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC3-Patient.p4,DC,Minor subset.tDC3-Patient.p4,Zilionis2019,Minor subset.tDC3-Patient.p4,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC3-Patient.p5,DC,Minor subset.tDC3-Patient.p5,Zilionis2019,Minor subset.tDC3-Patient.p5,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC3-Patient.p6,DC,Minor subset.tDC3-Patient.p6,Zilionis2019,Minor subset.tDC3-Patient.p6,myeloid,dendritic,dendritic,myeloid
+Minor subset.tDC3-Patient.p7,DC,Minor subset.tDC3-Patient.p7,Zilionis2019,Minor subset.tDC3-Patient.p7,myeloid,dendritic,dendritic,myeloid
+Minor subset.tMonoDC-Patient.p3,DC,Minor subset.tMonoDC-Patient.p3,Zilionis2019,Minor subset.tMonoDC-Patient.p3,myeloid,dendritic,dendritic,myeloid
+Minor subset.tMonoDC-Patient.p4,DC,Minor subset.tMonoDC-Patient.p4,Zilionis2019,Minor subset.tMonoDC-Patient.p4,myeloid,dendritic,dendritic,myeloid
+Minor subset.tMonoDC-Patient.p1,DC,Minor subset.tMonoDC-Patient.p1,Zilionis2019,Minor subset.tMonoDC-Patient.p1,myeloid,dendritic,dendritic,myeloid
+Minor subset.tMonoDC-Patient.p2,DC,Minor subset.tMonoDC-Patient.p2,Zilionis2019,Minor subset.tMonoDC-Patient.p2,myeloid,dendritic,dendritic,myeloid
+Minor subset.tMonoDC-Patient.p7,DC,Minor subset.tMonoDC-Patient.p7,Zilionis2019,Minor subset.tMonoDC-Patient.p7,myeloid,dendritic,dendritic,myeloid
+Minor subset.tMonoDC-Patient.p5,DC,Minor subset.tMonoDC-Patient.p5,Zilionis2019,Minor subset.tMonoDC-Patient.p5,myeloid,dendritic,dendritic,myeloid
+Minor subset.tMonoDC-Patient.p6,DC,Minor subset.tMonoDC-Patient.p6,Zilionis2019,Minor subset.tMonoDC-Patient.p6,myeloid,dendritic,dendritic,myeloid
+Minor subset.tMac1-Patient.p2,Macrophages,Minor subset.tMac1-Patient.p2,Zilionis2019,Minor subset.tMac1-Patient.p2,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac1-Patient.p1,Macrophages,Minor subset.tMac1-Patient.p1,Zilionis2019,Minor subset.tMac1-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac1-Patient.p6,Macrophages,Minor subset.tMac1-Patient.p6,Zilionis2019,Minor subset.tMac1-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac1-Patient.p3,Macrophages,Minor subset.tMac1-Patient.p3,Zilionis2019,Minor subset.tMac1-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac1-Patient.p4,Macrophages,Minor subset.tMac1-Patient.p4,Zilionis2019,Minor subset.tMac1-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac1-Patient.p5,Macrophages,Minor subset.tMac1-Patient.p5,Zilionis2019,Minor subset.tMac1-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac2-Patient.p7,Macrophages,Minor subset.tMac2-Patient.p7,Zilionis2019,Minor subset.tMac2-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac3-Patient.p1,Macrophages,Minor subset.tMac3-Patient.p1,Zilionis2019,Minor subset.tMac3-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac3-Patient.p2,Macrophages,Minor subset.tMac3-Patient.p2,Zilionis2019,Minor subset.tMac3-Patient.p2,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac3-Patient.p3,Macrophages,Minor subset.tMac3-Patient.p3,Zilionis2019,Minor subset.tMac3-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac3-Patient.p4,Macrophages,Minor subset.tMac3-Patient.p4,Zilionis2019,Minor subset.tMac3-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac3-Patient.p5,Macrophages,Minor subset.tMac3-Patient.p5,Zilionis2019,Minor subset.tMac3-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac1-Patient.p7,Macrophages,Minor subset.tMac1-Patient.p7,Zilionis2019,Minor subset.tMac1-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac2-Patient.p1,Macrophages,Minor subset.tMac2-Patient.p1,Zilionis2019,Minor subset.tMac2-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac2-Patient.p2,Macrophages,Minor subset.tMac2-Patient.p2,Zilionis2019,Minor subset.tMac2-Patient.p2,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac2-Patient.p3,Macrophages,Minor subset.tMac2-Patient.p3,Zilionis2019,Minor subset.tMac2-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac2-Patient.p4,Macrophages,Minor subset.tMac2-Patient.p4,Zilionis2019,Minor subset.tMac2-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac2-Patient.p5,Macrophages,Minor subset.tMac2-Patient.p5,Zilionis2019,Minor subset.tMac2-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac2-Patient.p6,Macrophages,Minor subset.tMac2-Patient.p6,Zilionis2019,Minor subset.tMac2-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac4-Patient.p6,Macrophages,Minor subset.tMac4-Patient.p6,Zilionis2019,Minor subset.tMac4-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac4-Patient.p7,Macrophages,Minor subset.tMac4-Patient.p7,Zilionis2019,Minor subset.tMac4-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac5-Patient.p1,Macrophages,Minor subset.tMac5-Patient.p1,Zilionis2019,Minor subset.tMac5-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac5-Patient.p3,Macrophages,Minor subset.tMac5-Patient.p3,Zilionis2019,Minor subset.tMac5-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac5-Patient.p4,Macrophages,Minor subset.tMac5-Patient.p4,Zilionis2019,Minor subset.tMac5-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac5-Patient.p5,Macrophages,Minor subset.tMac5-Patient.p5,Zilionis2019,Minor subset.tMac5-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac5-Patient.p6,Macrophages,Minor subset.tMac5-Patient.p6,Zilionis2019,Minor subset.tMac5-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac5-Patient.p7,Macrophages,Minor subset.tMac5-Patient.p7,Zilionis2019,Minor subset.tMac5-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac6-Patient.p1,Macrophages,Minor subset.tMac6-Patient.p1,Zilionis2019,Minor subset.tMac6-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac6-Patient.p2,Macrophages,Minor subset.tMac6-Patient.p2,Zilionis2019,Minor subset.tMac6-Patient.p2,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac6-Patient.p3,Macrophages,Minor subset.tMac6-Patient.p3,Zilionis2019,Minor subset.tMac6-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac6-Patient.p4,Macrophages,Minor subset.tMac6-Patient.p4,Zilionis2019,Minor subset.tMac6-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac6-Patient.p5,Macrophages,Minor subset.tMac6-Patient.p5,Zilionis2019,Minor subset.tMac6-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac6-Patient.p6,Macrophages,Minor subset.tMac6-Patient.p6,Zilionis2019,Minor subset.tMac6-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac6-Patient.p7,Macrophages,Minor subset.tMac6-Patient.p7,Zilionis2019,Minor subset.tMac6-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac7-Patient.p1,Macrophages,Minor subset.tMac7-Patient.p1,Zilionis2019,Minor subset.tMac7-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac7-Patient.p3,Macrophages,Minor subset.tMac7-Patient.p3,Zilionis2019,Minor subset.tMac7-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac7-Patient.p4,Macrophages,Minor subset.tMac7-Patient.p4,Zilionis2019,Minor subset.tMac7-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac7-Patient.p5,Macrophages,Minor subset.tMac7-Patient.p5,Zilionis2019,Minor subset.tMac7-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac7-Patient.p6,Macrophages,Minor subset.tMac7-Patient.p6,Zilionis2019,Minor subset.tMac7-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac7-Patient.p7,Macrophages,Minor subset.tMac7-Patient.p7,Zilionis2019,Minor subset.tMac7-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac8-Patient.p1,Macrophages,Minor subset.tMac8-Patient.p1,Zilionis2019,Minor subset.tMac8-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac8-Patient.p2,Macrophages,Minor subset.tMac8-Patient.p2,Zilionis2019,Minor subset.tMac8-Patient.p2,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac8-Patient.p3,Macrophages,Minor subset.tMac8-Patient.p3,Zilionis2019,Minor subset.tMac8-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac8-Patient.p4,Macrophages,Minor subset.tMac8-Patient.p4,Zilionis2019,Minor subset.tMac8-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac8-Patient.p5,Macrophages,Minor subset.tMac8-Patient.p5,Zilionis2019,Minor subset.tMac8-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac8-Patient.p6,Macrophages,Minor subset.tMac8-Patient.p6,Zilionis2019,Minor subset.tMac8-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac8-Patient.p7,Macrophages,Minor subset.tMac8-Patient.p7,Zilionis2019,Minor subset.tMac8-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac9-Patient.p1,Macrophages,Minor subset.tMac9-Patient.p1,Zilionis2019,Minor subset.tMac9-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac9-Patient.p3,Macrophages,Minor subset.tMac9-Patient.p3,Zilionis2019,Minor subset.tMac9-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac9-Patient.p4,Macrophages,Minor subset.tMac9-Patient.p4,Zilionis2019,Minor subset.tMac9-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac9-Patient.p5,Macrophages,Minor subset.tMac9-Patient.p5,Zilionis2019,Minor subset.tMac9-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac9-Patient.p6,Macrophages,Minor subset.tMac9-Patient.p6,Zilionis2019,Minor subset.tMac9-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac3-Patient.p6,Macrophages,Minor subset.tMac3-Patient.p6,Zilionis2019,Minor subset.tMac3-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac3-Patient.p7,Macrophages,Minor subset.tMac3-Patient.p7,Zilionis2019,Minor subset.tMac3-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac4-Patient.p1,Macrophages,Minor subset.tMac4-Patient.p1,Zilionis2019,Minor subset.tMac4-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac4-Patient.p2,Macrophages,Minor subset.tMac4-Patient.p2,Zilionis2019,Minor subset.tMac4-Patient.p2,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac4-Patient.p3,Macrophages,Minor subset.tMac4-Patient.p3,Zilionis2019,Minor subset.tMac4-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac4-Patient.p4,Macrophages,Minor subset.tMac4-Patient.p4,Zilionis2019,Minor subset.tMac4-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac4-Patient.p5,Macrophages,Minor subset.tMac4-Patient.p5,Zilionis2019,Minor subset.tMac4-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMacCycl-Patient.p7,Macrophages,Minor subset.tMacCycl-Patient.p7,Zilionis2019,Minor subset.tMacCycl-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMacCycl-Patient.p3,Macrophages,Minor subset.tMacCycl-Patient.p3,Zilionis2019,Minor subset.tMacCycl-Patient.p3,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMacCycl-Patient.p4,Macrophages,Minor subset.tMacCycl-Patient.p4,Zilionis2019,Minor subset.tMacCycl-Patient.p4,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMac9-Patient.p7,Macrophages,Minor subset.tMac9-Patient.p7,Zilionis2019,Minor subset.tMac9-Patient.p7,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMacCycl-Patient.p1,Macrophages,Minor subset.tMacCycl-Patient.p1,Zilionis2019,Minor subset.tMacCycl-Patient.p1,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMacCycl-Patient.p5,Macrophages,Minor subset.tMacCycl-Patient.p5,Zilionis2019,Minor subset.tMacCycl-Patient.p5,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMacCycl-Patient.p6,Macrophages,Minor subset.tMacCycl-Patient.p6,Zilionis2019,Minor subset.tMacCycl-Patient.p6,myeloid,macrophages,macrophages,myeloid
+Minor subset.tMast1-Patient.p2,Mast,Minor subset.tMast1-Patient.p2,Zilionis2019,Minor subset.tMast1-Patient.p2,MAST,MAST,MAST,MAST
+Minor subset.tMast1-Patient.p3,Mast,Minor subset.tMast1-Patient.p3,Zilionis2019,Minor subset.tMast1-Patient.p3,MAST,MAST,MAST,MAST
+Minor subset.tMast1-Patient.p6,Mast,Minor subset.tMast1-Patient.p6,Zilionis2019,Minor subset.tMast1-Patient.p6,MAST,MAST,MAST,MAST
+Minor subset.tMast1-Patient.p7,Mast,Minor subset.tMast1-Patient.p7,Zilionis2019,Minor subset.tMast1-Patient.p7,MAST,MAST,MAST,MAST
+Minor subset.tMast1-Patient.p4,Mast,Minor subset.tMast1-Patient.p4,Zilionis2019,Minor subset.tMast1-Patient.p4,MAST,MAST,MAST,MAST
+Minor subset.tMast1-Patient.p5,Mast,Minor subset.tMast1-Patient.p5,Zilionis2019,Minor subset.tMast1-Patient.p5,MAST,MAST,MAST,MAST
+Minor subset.tMast1-Patient.p1,Mast,Minor subset.tMast1-Patient.p1,Zilionis2019,Minor subset.tMast1-Patient.p1,MAST,MAST,MAST,MAST
+Minor subset.tMast2-Patient.p3,Mast,Minor subset.tMast2-Patient.p3,Zilionis2019,Minor subset.tMast2-Patient.p3,MAST,MAST,MAST,MAST
+Minor subset.tMast2-Patient.p5,Mast,Minor subset.tMast2-Patient.p5,Zilionis2019,Minor subset.tMast2-Patient.p5,MAST,MAST,MAST,MAST
+Minor subset.tMast2-Patient.p1,Mast,Minor subset.tMast2-Patient.p1,Zilionis2019,Minor subset.tMast2-Patient.p1,MAST,MAST,MAST,MAST
+Minor subset.tMast2-Patient.p2,Mast,Minor subset.tMast2-Patient.p2,Zilionis2019,Minor subset.tMast2-Patient.p2,MAST,MAST,MAST,MAST
+Minor subset.tMast2-Patient.p6,Mast,Minor subset.tMast2-Patient.p6,Zilionis2019,Minor subset.tMast2-Patient.p6,MAST,MAST,MAST,MAST
+Minor subset.tMast2-Patient.p7,Mast,Minor subset.tMast2-Patient.p7,Zilionis2019,Minor subset.tMast2-Patient.p7,MAST,MAST,MAST,MAST
+Minor subset.tMono1-Patient.p2,Monocytes,Minor subset.tMono1-Patient.p2,Zilionis2019,Minor subset.tMono1-Patient.p2,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono1-Patient.p3,Monocytes,Minor subset.tMono1-Patient.p3,Zilionis2019,Minor subset.tMono1-Patient.p3,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono1-Patient.p6,Monocytes,Minor subset.tMono1-Patient.p6,Zilionis2019,Minor subset.tMono1-Patient.p6,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono1-Patient.p7,Monocytes,Minor subset.tMono1-Patient.p7,Zilionis2019,Minor subset.tMono1-Patient.p7,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono1-Patient.p4,Monocytes,Minor subset.tMono1-Patient.p4,Zilionis2019,Minor subset.tMono1-Patient.p4,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono1-Patient.p5,Monocytes,Minor subset.tMono1-Patient.p5,Zilionis2019,Minor subset.tMono1-Patient.p5,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono1-Patient.p1,Monocytes,Minor subset.tMono1-Patient.p1,Zilionis2019,Minor subset.tMono1-Patient.p1,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono3-Patient.p1,Monocytes,Minor subset.tMono3-Patient.p1,Zilionis2019,Minor subset.tMono3-Patient.p1,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono3-Patient.p2,Monocytes,Minor subset.tMono3-Patient.p2,Zilionis2019,Minor subset.tMono3-Patient.p2,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono3-Patient.p3,Monocytes,Minor subset.tMono3-Patient.p3,Zilionis2019,Minor subset.tMono3-Patient.p3,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono3-Patient.p5,Monocytes,Minor subset.tMono3-Patient.p5,Zilionis2019,Minor subset.tMono3-Patient.p5,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono3-Patient.p6,Monocytes,Minor subset.tMono3-Patient.p6,Zilionis2019,Minor subset.tMono3-Patient.p6,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono3-Patient.p7,Monocytes,Minor subset.tMono3-Patient.p7,Zilionis2019,Minor subset.tMono3-Patient.p7,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono2-Patient.p1,Monocytes,Minor subset.tMono2-Patient.p1,Zilionis2019,Minor subset.tMono2-Patient.p1,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono2-Patient.p2,Monocytes,Minor subset.tMono2-Patient.p2,Zilionis2019,Minor subset.tMono2-Patient.p2,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono2-Patient.p3,Monocytes,Minor subset.tMono2-Patient.p3,Zilionis2019,Minor subset.tMono2-Patient.p3,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono2-Patient.p4,Monocytes,Minor subset.tMono2-Patient.p4,Zilionis2019,Minor subset.tMono2-Patient.p4,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono2-Patient.p5,Monocytes,Minor subset.tMono2-Patient.p5,Zilionis2019,Minor subset.tMono2-Patient.p5,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono2-Patient.p6,Monocytes,Minor subset.tMono2-Patient.p6,Zilionis2019,Minor subset.tMono2-Patient.p6,myeloid,macrophages,monocyte,myeloid
+Minor subset.tMono2-Patient.p7,Monocytes,Minor subset.tMono2-Patient.p7,Zilionis2019,Minor subset.tMono2-Patient.p7,myeloid,macrophages,monocyte,myeloid
+Minor subset.tN1-Patient.p1,Neutrophils,Minor subset.tN1-Patient.p1,Zilionis2019,Minor subset.tN1-Patient.p1,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN1-Patient.p2,Neutrophils,Minor subset.tN1-Patient.p2,Zilionis2019,Minor subset.tN1-Patient.p2,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN1-Patient.p3,Neutrophils,Minor subset.tN1-Patient.p3,Zilionis2019,Minor subset.tN1-Patient.p3,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN1-Patient.p4,Neutrophils,Minor subset.tN1-Patient.p4,Zilionis2019,Minor subset.tN1-Patient.p4,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN1-Patient.p6,Neutrophils,Minor subset.tN1-Patient.p6,Zilionis2019,Minor subset.tN1-Patient.p6,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN1-Patient.p7,Neutrophils,Minor subset.tN1-Patient.p7,Zilionis2019,Minor subset.tN1-Patient.p7,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN2-Patient.p1,Neutrophils,Minor subset.tN2-Patient.p1,Zilionis2019,Minor subset.tN2-Patient.p1,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN2-Patient.p5,Neutrophils,Minor subset.tN2-Patient.p5,Zilionis2019,Minor subset.tN2-Patient.p5,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN2-Patient.p7,Neutrophils,Minor subset.tN2-Patient.p7,Zilionis2019,Minor subset.tN2-Patient.p7,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN3-Patient.p1,Neutrophils,Minor subset.tN3-Patient.p1,Zilionis2019,Minor subset.tN3-Patient.p1,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN3-Patient.p2,Neutrophils,Minor subset.tN3-Patient.p2,Zilionis2019,Minor subset.tN3-Patient.p2,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN3-Patient.p3,Neutrophils,Minor subset.tN3-Patient.p3,Zilionis2019,Minor subset.tN3-Patient.p3,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN3-Patient.p4,Neutrophils,Minor subset.tN3-Patient.p4,Zilionis2019,Minor subset.tN3-Patient.p4,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN3-Patient.p5,Neutrophils,Minor subset.tN3-Patient.p5,Zilionis2019,Minor subset.tN3-Patient.p5,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN3-Patient.p6,Neutrophils,Minor subset.tN3-Patient.p6,Zilionis2019,Minor subset.tN3-Patient.p6,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN3-Patient.p7,Neutrophils,Minor subset.tN3-Patient.p7,Zilionis2019,Minor subset.tN3-Patient.p7,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN4-Patient.p1,Neutrophils,Minor subset.tN4-Patient.p1,Zilionis2019,Minor subset.tN4-Patient.p1,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN4-Patient.p2,Neutrophils,Minor subset.tN4-Patient.p2,Zilionis2019,Minor subset.tN4-Patient.p2,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN4-Patient.p3,Neutrophils,Minor subset.tN4-Patient.p3,Zilionis2019,Minor subset.tN4-Patient.p3,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN4-Patient.p4,Neutrophils,Minor subset.tN4-Patient.p4,Zilionis2019,Minor subset.tN4-Patient.p4,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN4-Patient.p5,Neutrophils,Minor subset.tN4-Patient.p5,Zilionis2019,Minor subset.tN4-Patient.p5,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN4-Patient.p6,Neutrophils,Minor subset.tN4-Patient.p6,Zilionis2019,Minor subset.tN4-Patient.p6,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN4-Patient.p7,Neutrophils,Minor subset.tN4-Patient.p7,Zilionis2019,Minor subset.tN4-Patient.p7,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN5-Patient.p1,Neutrophils,Minor subset.tN5-Patient.p1,Zilionis2019,Minor subset.tN5-Patient.p1,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN5-Patient.p2,Neutrophils,Minor subset.tN5-Patient.p2,Zilionis2019,Minor subset.tN5-Patient.p2,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN5-Patient.p3,Neutrophils,Minor subset.tN5-Patient.p3,Zilionis2019,Minor subset.tN5-Patient.p3,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN5-Patient.p5,Neutrophils,Minor subset.tN5-Patient.p5,Zilionis2019,Minor subset.tN5-Patient.p5,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN5-Patient.p6,Neutrophils,Minor subset.tN5-Patient.p6,Zilionis2019,Minor subset.tN5-Patient.p6,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tN5-Patient.p7,Neutrophils,Minor subset.tN5-Patient.p7,Zilionis2019,Minor subset.tN5-Patient.p7,Neutrophils,Neutrophils,Neutrophils,Neutrophils
+Minor subset.tNK1-Patient.p1,NK.cells,Minor subset.tNK1-Patient.p1,Zilionis2019,Minor subset.tNK1-Patient.p1,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK1-Patient.p2,NK.cells,Minor subset.tNK1-Patient.p2,Zilionis2019,Minor subset.tNK1-Patient.p2,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK1-Patient.p3,NK.cells,Minor subset.tNK1-Patient.p3,Zilionis2019,Minor subset.tNK1-Patient.p3,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK1-Patient.p4,NK.cells,Minor subset.tNK1-Patient.p4,Zilionis2019,Minor subset.tNK1-Patient.p4,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK1-Patient.p5,NK.cells,Minor subset.tNK1-Patient.p5,Zilionis2019,Minor subset.tNK1-Patient.p5,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK1-Patient.p6,NK.cells,Minor subset.tNK1-Patient.p6,Zilionis2019,Minor subset.tNK1-Patient.p6,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK1-Patient.p7,NK.cells,Minor subset.tNK1-Patient.p7,Zilionis2019,Minor subset.tNK1-Patient.p7,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK2-Patient.p1,NK.cells,Minor subset.tNK2-Patient.p1,Zilionis2019,Minor subset.tNK2-Patient.p1,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK2-Patient.p2,NK.cells,Minor subset.tNK2-Patient.p2,Zilionis2019,Minor subset.tNK2-Patient.p2,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK2-Patient.p3,NK.cells,Minor subset.tNK2-Patient.p3,Zilionis2019,Minor subset.tNK2-Patient.p3,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK2-Patient.p4,NK.cells,Minor subset.tNK2-Patient.p4,Zilionis2019,Minor subset.tNK2-Patient.p4,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK2-Patient.p5,NK.cells,Minor subset.tNK2-Patient.p5,Zilionis2019,Minor subset.tNK2-Patient.p5,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK2-Patient.p6,NK.cells,Minor subset.tNK2-Patient.p6,Zilionis2019,Minor subset.tNK2-Patient.p6,lymphoid,ILC,ILC,lymphoid
+Minor subset.tNK2-Patient.p7,NK.cells,Minor subset.tNK2-Patient.p7,Zilionis2019,Minor subset.tNK2-Patient.p7,lymphoid,ILC,ILC,lymphoid
+Minor subset.tPC1-Patient.p1,Plasma.cells,Minor subset.tPC1-Patient.p1,Zilionis2019,Minor subset.tPC1-Patient.p1,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC1-Patient.p2,Plasma.cells,Minor subset.tPC1-Patient.p2,Zilionis2019,Minor subset.tPC1-Patient.p2,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC1-Patient.p3,Plasma.cells,Minor subset.tPC1-Patient.p3,Zilionis2019,Minor subset.tPC1-Patient.p3,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC1-Patient.p5,Plasma.cells,Minor subset.tPC1-Patient.p5,Zilionis2019,Minor subset.tPC1-Patient.p5,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC1-Patient.p6,Plasma.cells,Minor subset.tPC1-Patient.p6,Zilionis2019,Minor subset.tPC1-Patient.p6,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC1-Patient.p7,Plasma.cells,Minor subset.tPC1-Patient.p7,Zilionis2019,Minor subset.tPC1-Patient.p7,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC2-Patient.p1,Plasma.cells,Minor subset.tPC2-Patient.p1,Zilionis2019,Minor subset.tPC2-Patient.p1,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC2-Patient.p3,Plasma.cells,Minor subset.tPC2-Patient.p3,Zilionis2019,Minor subset.tPC2-Patient.p3,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC2-Patient.p5,Plasma.cells,Minor subset.tPC2-Patient.p5,Zilionis2019,Minor subset.tPC2-Patient.p5,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC2-Patient.p6,Plasma.cells,Minor subset.tPC2-Patient.p6,Zilionis2019,Minor subset.tPC2-Patient.p6,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC2-Patient.p7,Plasma.cells,Minor subset.tPC2-Patient.p7,Zilionis2019,Minor subset.tPC2-Patient.p7,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC3-Patient.p1,Plasma.cells,Minor subset.tPC3-Patient.p1,Zilionis2019,Minor subset.tPC3-Patient.p1,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC3-Patient.p3,Plasma.cells,Minor subset.tPC3-Patient.p3,Zilionis2019,Minor subset.tPC3-Patient.p3,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC3-Patient.p5,Plasma.cells,Minor subset.tPC3-Patient.p5,Zilionis2019,Minor subset.tPC3-Patient.p5,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC3-Patient.p6,Plasma.cells,Minor subset.tPC3-Patient.p6,Zilionis2019,Minor subset.tPC3-Patient.p6,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC3-Patient.p7,Plasma.cells,Minor subset.tPC3-Patient.p7,Zilionis2019,Minor subset.tPC3-Patient.p7,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC4-Patient.p1,Plasma.cells,Minor subset.tPC4-Patient.p1,Zilionis2019,Minor subset.tPC4-Patient.p1,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC4-Patient.p2,Plasma.cells,Minor subset.tPC4-Patient.p2,Zilionis2019,Minor subset.tPC4-Patient.p2,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC4-Patient.p3,Plasma.cells,Minor subset.tPC4-Patient.p3,Zilionis2019,Minor subset.tPC4-Patient.p3,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC4-Patient.p5,Plasma.cells,Minor subset.tPC4-Patient.p5,Zilionis2019,Minor subset.tPC4-Patient.p5,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC4-Patient.p6,Plasma.cells,Minor subset.tPC4-Patient.p6,Zilionis2019,Minor subset.tPC4-Patient.p6,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC4-Patient.p7,Plasma.cells,Minor subset.tPC4-Patient.p7,Zilionis2019,Minor subset.tPC4-Patient.p7,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC5-Patient.p1,Plasma.cells,Minor subset.tPC5-Patient.p1,Zilionis2019,Minor subset.tPC5-Patient.p1,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC5-Patient.p2,Plasma.cells,Minor subset.tPC5-Patient.p2,Zilionis2019,Minor subset.tPC5-Patient.p2,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC5-Patient.p3,Plasma.cells,Minor subset.tPC5-Patient.p3,Zilionis2019,Minor subset.tPC5-Patient.p3,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC5-Patient.p4,Plasma.cells,Minor subset.tPC5-Patient.p4,Zilionis2019,Minor subset.tPC5-Patient.p4,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC5-Patient.p5,Plasma.cells,Minor subset.tPC5-Patient.p5,Zilionis2019,Minor subset.tPC5-Patient.p5,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC5-Patient.p6,Plasma.cells,Minor subset.tPC5-Patient.p6,Zilionis2019,Minor subset.tPC5-Patient.p6,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC5-Patient.p7,Plasma.cells,Minor subset.tPC5-Patient.p7,Zilionis2019,Minor subset.tPC5-Patient.p7,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC6-Patient.p1,Plasma.cells,Minor subset.tPC6-Patient.p1,Zilionis2019,Minor subset.tPC6-Patient.p1,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC6-Patient.p2,Plasma.cells,Minor subset.tPC6-Patient.p2,Zilionis2019,Minor subset.tPC6-Patient.p2,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC6-Patient.p3,Plasma.cells,Minor subset.tPC6-Patient.p3,Zilionis2019,Minor subset.tPC6-Patient.p3,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC6-Patient.p4,Plasma.cells,Minor subset.tPC6-Patient.p4,Zilionis2019,Minor subset.tPC6-Patient.p4,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC6-Patient.p5,Plasma.cells,Minor subset.tPC6-Patient.p5,Zilionis2019,Minor subset.tPC6-Patient.p5,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC6-Patient.p6,Plasma.cells,Minor subset.tPC6-Patient.p6,Zilionis2019,Minor subset.tPC6-Patient.p6,lymphoid,B,Plasma,lymphoid
+Minor subset.tPC6-Patient.p7,Plasma.cells,Minor subset.tPC6-Patient.p7,Zilionis2019,Minor subset.tPC6-Patient.p7,lymphoid,B,Plasma,lymphoid
+Minor subset.tRBC-Patient.p1,Erythrocytes,Minor subset.tRBC-Patient.p1,Zilionis2019,Minor subset.tRBC-Patient.p1,Erythrocytes,Erythrocytes,Erythrocytes,Erythrocytes
+Minor subset.tRBC-Patient.p3,Erythrocytes,Minor subset.tRBC-Patient.p3,Zilionis2019,Minor subset.tRBC-Patient.p3,Erythrocytes,Erythrocytes,Erythrocytes,Erythrocytes
+Minor subset.tRBC-Patient.p4,Erythrocytes,Minor subset.tRBC-Patient.p4,Zilionis2019,Minor subset.tRBC-Patient.p4,Erythrocytes,Erythrocytes,Erythrocytes,Erythrocytes
+Minor subset.tT1-Patient.p1,CD8..T.cells,Minor subset.tT1-Patient.p1,Zilionis2019,Minor subset.tT1-Patient.p1,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT1-Patient.p2,CD8..T.cells,Minor subset.tT1-Patient.p2,Zilionis2019,Minor subset.tT1-Patient.p2,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT1-Patient.p3,CD8..T.cells,Minor subset.tT1-Patient.p3,Zilionis2019,Minor subset.tT1-Patient.p3,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT1-Patient.p4,CD8..T.cells,Minor subset.tT1-Patient.p4,Zilionis2019,Minor subset.tT1-Patient.p4,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT1-Patient.p5,CD8..T.cells,Minor subset.tT1-Patient.p5,Zilionis2019,Minor subset.tT1-Patient.p5,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT1-Patient.p6,CD8..T.cells,Minor subset.tT1-Patient.p6,Zilionis2019,Minor subset.tT1-Patient.p6,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT1-Patient.p7,CD8..T.cells,Minor subset.tT1-Patient.p7,Zilionis2019,Minor subset.tT1-Patient.p7,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT2-Patient.p1,CD4..T.cells,Minor subset.tT2-Patient.p1,Zilionis2019,Minor subset.tT2-Patient.p1,lymphoid,Zilionis T2,Zilionis T2,lymphoid
+Minor subset.tT2-Patient.p2,CD4..T.cells,Minor subset.tT2-Patient.p2,Zilionis2019,Minor subset.tT2-Patient.p2,lymphoid,Zilionis T2,Zilionis T2,lymphoid
+Minor subset.tT2-Patient.p3,CD4..T.cells,Minor subset.tT2-Patient.p3,Zilionis2019,Minor subset.tT2-Patient.p3,lymphoid,Zilionis T2,Zilionis T2,lymphoid
+Minor subset.tT2-Patient.p4,CD4..T.cells,Minor subset.tT2-Patient.p4,Zilionis2019,Minor subset.tT2-Patient.p4,lymphoid,Zilionis T2,Zilionis T2,lymphoid
+Minor subset.tT2-Patient.p5,CD4..T.cells,Minor subset.tT2-Patient.p5,Zilionis2019,Minor subset.tT2-Patient.p5,lymphoid,Zilionis T2,Zilionis T2,lymphoid
+Minor subset.tT2-Patient.p6,CD4..T.cells,Minor subset.tT2-Patient.p6,Zilionis2019,Minor subset.tT2-Patient.p6,lymphoid,Zilionis T2,Zilionis T2,lymphoid
+Minor subset.tT2-Patient.p7,CD4..T.cells,Minor subset.tT2-Patient.p7,Zilionis2019,Minor subset.tT2-Patient.p7,lymphoid,Zilionis T2,Zilionis T2,lymphoid
+Minor subset.tT3-Patient.p1,CD4..T.cells,Minor subset.tT3-Patient.p1,Zilionis2019,Minor subset.tT3-Patient.p1,lymphoid,Treg,Treg,lymphoid
+Minor subset.tT3-Patient.p2,CD4..T.cells,Minor subset.tT3-Patient.p2,Zilionis2019,Minor subset.tT3-Patient.p2,lymphoid,Treg,Treg,lymphoid
+Minor subset.tT3-Patient.p3,CD4..T.cells,Minor subset.tT3-Patient.p3,Zilionis2019,Minor subset.tT3-Patient.p3,lymphoid,Treg,Treg,lymphoid
+Minor subset.tT3-Patient.p4,CD4..T.cells,Minor subset.tT3-Patient.p4,Zilionis2019,Minor subset.tT3-Patient.p4,lymphoid,Treg,Treg,lymphoid
+Minor subset.tT3-Patient.p5,CD4..T.cells,Minor subset.tT3-Patient.p5,Zilionis2019,Minor subset.tT3-Patient.p5,lymphoid,Treg,Treg,lymphoid
+Minor subset.tT3-Patient.p6,CD4..T.cells,Minor subset.tT3-Patient.p6,Zilionis2019,Minor subset.tT3-Patient.p6,lymphoid,Treg,Treg,lymphoid
+Minor subset.tT3-Patient.p7,CD4..T.cells,Minor subset.tT3-Patient.p7,Zilionis2019,Minor subset.tT3-Patient.p7,lymphoid,Treg,Treg,lymphoid
+Minor subset.tT4-Patient.p1,CD4..T.cells,Minor subset.tT4-Patient.p1,Zilionis2019,Minor subset.tT4-Patient.p1,lymphoid,T CD4,T CD4,lymphoid
+Minor subset.tT4-Patient.p2,CD4..T.cells,Minor subset.tT4-Patient.p2,Zilionis2019,Minor subset.tT4-Patient.p2,lymphoid,T CD4,T CD4,lymphoid
+Minor subset.tT4-Patient.p3,CD4..T.cells,Minor subset.tT4-Patient.p3,Zilionis2019,Minor subset.tT4-Patient.p3,lymphoid,T CD4,T CD4,lymphoid
+Minor subset.tT4-Patient.p4,CD4..T.cells,Minor subset.tT4-Patient.p4,Zilionis2019,Minor subset.tT4-Patient.p4,lymphoid,T CD4,T CD4,lymphoid
+Minor subset.tT4-Patient.p5,CD4..T.cells,Minor subset.tT4-Patient.p5,Zilionis2019,Minor subset.tT4-Patient.p5,lymphoid,T CD4,T CD4,lymphoid
+Minor subset.tT4-Patient.p6,CD4..T.cells,Minor subset.tT4-Patient.p6,Zilionis2019,Minor subset.tT4-Patient.p6,lymphoid,T CD4,T CD4,lymphoid
+Minor subset.tT4-Patient.p7,CD4..T.cells,Minor subset.tT4-Patient.p7,Zilionis2019,Minor subset.tT4-Patient.p7,lymphoid,T CD4,T CD4,lymphoid
+Minor subset.tT6-Patient.p1,CD4..T.cells,Minor subset.tT6-Patient.p1,Zilionis2019,Minor subset.tT6-Patient.p1,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT6-Patient.p2,CD4..T.cells,Minor subset.tT6-Patient.p2,Zilionis2019,Minor subset.tT6-Patient.p2,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT6-Patient.p3,CD4..T.cells,Minor subset.tT6-Patient.p3,Zilionis2019,Minor subset.tT6-Patient.p3,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT6-Patient.p4,CD4..T.cells,Minor subset.tT6-Patient.p4,Zilionis2019,Minor subset.tT6-Patient.p4,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT6-Patient.p5,CD4..T.cells,Minor subset.tT6-Patient.p5,Zilionis2019,Minor subset.tT6-Patient.p5,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT6-Patient.p6,CD4..T.cells,Minor subset.tT6-Patient.p6,Zilionis2019,Minor subset.tT6-Patient.p6,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT6-Patient.p7,CD4..T.cells,Minor subset.tT6-Patient.p7,Zilionis2019,Minor subset.tT6-Patient.p7,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT7-Patient.p1,CD4..T.cells,Minor subset.tT7-Patient.p1,Zilionis2019,Minor subset.tT7-Patient.p1,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT7-Patient.p3,CD4..T.cells,Minor subset.tT7-Patient.p3,Zilionis2019,Minor subset.tT7-Patient.p3,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT7-Patient.p4,CD4..T.cells,Minor subset.tT7-Patient.p4,Zilionis2019,Minor subset.tT7-Patient.p4,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT7-Patient.p5,CD4..T.cells,Minor subset.tT7-Patient.p5,Zilionis2019,Minor subset.tT7-Patient.p5,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT7-Patient.p6,CD4..T.cells,Minor subset.tT7-Patient.p6,Zilionis2019,Minor subset.tT7-Patient.p6,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tT7-Patient.p7,CD4..T.cells,Minor subset.tT7-Patient.p7,Zilionis2019,Minor subset.tT7-Patient.p7,lymphoid,T CD8,T CD8,lymphoid
+Minor subset.tpDC-Patient.p1,pDCs,Minor subset.tpDC-Patient.p1,Zilionis2019,Minor subset.tpDC-Patient.p1,myeloid,pDC,pDC,myeloid
+Minor subset.tpDC-Patient.p3,pDCs,Minor subset.tpDC-Patient.p3,Zilionis2019,Minor subset.tpDC-Patient.p3,myeloid,pDC,pDC,myeloid
+Minor subset.tpDC-Patient.p4,pDCs,Minor subset.tpDC-Patient.p4,Zilionis2019,Minor subset.tpDC-Patient.p4,myeloid,pDC,pDC,myeloid
+Minor subset.tpDC-Patient.p5,pDCs,Minor subset.tpDC-Patient.p5,Zilionis2019,Minor subset.tpDC-Patient.p5,myeloid,pDC,pDC,myeloid
+Minor subset.tpDC-Patient.p6,pDCs,Minor subset.tpDC-Patient.p6,Zilionis2019,Minor subset.tpDC-Patient.p6,myeloid,pDC,pDC,myeloid
+Minor subset.tpDC-Patient.p7,pDCs,Minor subset.tpDC-Patient.p7,Zilionis2019,Minor subset.tpDC-Patient.p7,myeloid,pDC,pDC,myeloid
+cellTypeMajor.CAFs-donorID.CID3586,CAFs,cellTypeMajor.CAFs-donorID.CID3586,Wu2021,cellTypeMajor.CAFs-donorID.CID3586,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID3838,CAFs,cellTypeMajor.CAFs-donorID.CID3838,Wu2021,cellTypeMajor.CAFs-donorID.CID3838,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID3921,CAFs,cellTypeMajor.CAFs-donorID.CID3921,Wu2021,cellTypeMajor.CAFs-donorID.CID3921,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID3941,CAFs,cellTypeMajor.CAFs-donorID.CID3941,Wu2021,cellTypeMajor.CAFs-donorID.CID3941,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID3946,CAFs,cellTypeMajor.CAFs-donorID.CID3946,Wu2021,cellTypeMajor.CAFs-donorID.CID3946,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID3948,CAFs,cellTypeMajor.CAFs-donorID.CID3948,Wu2021,cellTypeMajor.CAFs-donorID.CID3948,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID3963,CAFs,cellTypeMajor.CAFs-donorID.CID3963,Wu2021,cellTypeMajor.CAFs-donorID.CID3963,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4040,CAFs,cellTypeMajor.CAFs-donorID.CID4040,Wu2021,cellTypeMajor.CAFs-donorID.CID4040,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4066,CAFs,cellTypeMajor.CAFs-donorID.CID4066,Wu2021,cellTypeMajor.CAFs-donorID.CID4066,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4067,CAFs,cellTypeMajor.CAFs-donorID.CID4067,Wu2021,cellTypeMajor.CAFs-donorID.CID4067,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4290A,CAFs,cellTypeMajor.CAFs-donorID.CID4290A,Wu2021,cellTypeMajor.CAFs-donorID.CID4290A,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4398,CAFs,cellTypeMajor.CAFs-donorID.CID4398,Wu2021,cellTypeMajor.CAFs-donorID.CID4398,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID44041,CAFs,cellTypeMajor.CAFs-donorID.CID44041,Wu2021,cellTypeMajor.CAFs-donorID.CID44041,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4461,CAFs,cellTypeMajor.CAFs-donorID.CID4461,Wu2021,cellTypeMajor.CAFs-donorID.CID4461,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4463,CAFs,cellTypeMajor.CAFs-donorID.CID4463,Wu2021,cellTypeMajor.CAFs-donorID.CID4463,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4465,CAFs,cellTypeMajor.CAFs-donorID.CID4465,Wu2021,cellTypeMajor.CAFs-donorID.CID4465,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4471,CAFs,cellTypeMajor.CAFs-donorID.CID4471,Wu2021,cellTypeMajor.CAFs-donorID.CID4471,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4495,CAFs,cellTypeMajor.CAFs-donorID.CID4495,Wu2021,cellTypeMajor.CAFs-donorID.CID4495,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID44971,CAFs,cellTypeMajor.CAFs-donorID.CID44971,Wu2021,cellTypeMajor.CAFs-donorID.CID44971,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID44991,CAFs,cellTypeMajor.CAFs-donorID.CID44991,Wu2021,cellTypeMajor.CAFs-donorID.CID44991,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4513,CAFs,cellTypeMajor.CAFs-donorID.CID4513,Wu2021,cellTypeMajor.CAFs-donorID.CID4513,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4515,CAFs,cellTypeMajor.CAFs-donorID.CID4515,Wu2021,cellTypeMajor.CAFs-donorID.CID4515,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID45171,CAFs,cellTypeMajor.CAFs-donorID.CID45171,Wu2021,cellTypeMajor.CAFs-donorID.CID45171,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4523,CAFs,cellTypeMajor.CAFs-donorID.CID4523,Wu2021,cellTypeMajor.CAFs-donorID.CID4523,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.CAFs-donorID.CID4535,CAFs,cellTypeMajor.CAFs-donorID.CID4535,Wu2021,cellTypeMajor.CAFs-donorID.CID4535,stromal,fibroblasts,fibroblasts,stromal
+cellTypeMajor.Endothelial-donorID.CID3586,Endothelial,cellTypeMajor.Endothelial-donorID.CID3586,Wu2021,cellTypeMajor.Endothelial-donorID.CID3586,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID3921,Endothelial,cellTypeMajor.Endothelial-donorID.CID3921,Wu2021,cellTypeMajor.Endothelial-donorID.CID3921,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID3941,Endothelial,cellTypeMajor.Endothelial-donorID.CID3941,Wu2021,cellTypeMajor.Endothelial-donorID.CID3941,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID3946,Endothelial,cellTypeMajor.Endothelial-donorID.CID3946,Wu2021,cellTypeMajor.Endothelial-donorID.CID3946,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID3948,Endothelial,cellTypeMajor.Endothelial-donorID.CID3948,Wu2021,cellTypeMajor.Endothelial-donorID.CID3948,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID3963,Endothelial,cellTypeMajor.Endothelial-donorID.CID3963,Wu2021,cellTypeMajor.Endothelial-donorID.CID3963,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID4040,Endothelial,cellTypeMajor.Endothelial-donorID.CID4040,Wu2021,cellTypeMajor.Endothelial-donorID.CID4040,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID4067,Endothelial,cellTypeMajor.Endothelial-donorID.CID4067,Wu2021,cellTypeMajor.Endothelial-donorID.CID4067,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID4398,Endothelial,cellTypeMajor.Endothelial-donorID.CID4398,Wu2021,cellTypeMajor.Endothelial-donorID.CID4398,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID4461,Endothelial,cellTypeMajor.Endothelial-donorID.CID4461,Wu2021,cellTypeMajor.Endothelial-donorID.CID4461,stromal,endothelial,endothelial,stromal
+cellTypeMajor.Endothelial-donorID.CID45171,Endothelial,cellTypeMajor.Endothelial-donorID.CID45171,Wu2021,cellTypeMajor.Endothelial-donorID.CID45171,stromal,endothelial,endothelial,stromal
+Sample.P10_Normal-cellType.Endothelial Cell,Endothelial Cell,Sample.P10_Normal-cellType.Endothelial Cell,Ji2020,Sample.P10_Normal-cellType.Endothelial Cell,stromal,endothelial,endothelial,stromal
+Sample.P10_Normal-cellType.Fibroblast,Fibroblast,Sample.P10_Normal-cellType.Fibroblast,Ji2020,Sample.P10_Normal-cellType.Fibroblast,stromal,fibroblasts,fibroblasts,stromal
+Sample.P10_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P10_Normal-cellType.Keratinocyte,Ji2020,Sample.P10_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P10_Normal-cellType.Mac,Mac,Sample.P10_Normal-cellType.Mac,Ji2020,Sample.P10_Normal-cellType.Mac,myeloid,macrophages,macrophages,myeloid
+Sample.P10_Normal-cellType.Melanocyte,Melanocyte,Sample.P10_Normal-cellType.Melanocyte,Ji2020,Sample.P10_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P10_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P10_Normal-cellType.Pilosebaceous,Ji2020,Sample.P10_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P10_Normal-cellType.dendritic,dendritic,Sample.P10_Normal-cellType.dendritic,Ji2020,Sample.P10_Normal-cellType.dendritic,myeloid,dendritic,dendritic,myeloid
+Sample.P1_Normal-cellType.Endothelial Cell,Endothelial Cell,Sample.P1_Normal-cellType.Endothelial Cell,Ji2020,Sample.P1_Normal-cellType.Endothelial Cell,stromal,endothelial,endothelial,stromal
+Sample.P1_Normal-cellType.Fibroblast,Fibroblast,Sample.P1_Normal-cellType.Fibroblast,Ji2020,Sample.P1_Normal-cellType.Fibroblast,stromal,fibroblasts,fibroblasts,stromal
+Sample.P1_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P1_Normal-cellType.Keratinocyte,Ji2020,Sample.P1_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P1_Normal-cellType.Melanocyte,Melanocyte,Sample.P1_Normal-cellType.Melanocyte,Ji2020,Sample.P1_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P1_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P1_Normal-cellType.Pilosebaceous,Ji2020,Sample.P1_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P2_Normal-cellType.Endothelial Cell,Endothelial Cell,Sample.P2_Normal-cellType.Endothelial Cell,Ji2020,Sample.P2_Normal-cellType.Endothelial Cell,stromal,endothelial,endothelial,stromal
+Sample.P2_Normal-cellType.Fibroblast,Fibroblast,Sample.P2_Normal-cellType.Fibroblast,Ji2020,Sample.P2_Normal-cellType.Fibroblast,stromal,fibroblasts,fibroblasts,stromal
+Sample.P2_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P2_Normal-cellType.Keratinocyte,Ji2020,Sample.P2_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P2_Normal-cellType.Mac,Mac,Sample.P2_Normal-cellType.Mac,Ji2020,Sample.P2_Normal-cellType.Mac,myeloid,macrophages,macrophages,myeloid
+Sample.P2_Normal-cellType.Melanocyte,Melanocyte,Sample.P2_Normal-cellType.Melanocyte,Ji2020,Sample.P2_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P2_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P2_Normal-cellType.Pilosebaceous,Ji2020,Sample.P2_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P2_Normal-cellType.T CD8,T CD8,Sample.P2_Normal-cellType.T CD8,Ji2020,Sample.P2_Normal-cellType.T CD8,stromal,T CD8,T CD8,stromal
+Sample.P2_Normal-cellType.dendritic,dendritic,Sample.P2_Normal-cellType.dendritic,Ji2020,Sample.P2_Normal-cellType.dendritic,myeloid,dendritic,dendritic,myeloid
+Sample.P3_Normal-cellType.Endothelial Cell,Endothelial Cell,Sample.P3_Normal-cellType.Endothelial Cell,Ji2020,Sample.P3_Normal-cellType.Endothelial Cell,stromal,endothelial,endothelial,stromal
+Sample.P3_Normal-cellType.Fibroblast,Fibroblast,Sample.P3_Normal-cellType.Fibroblast,Ji2020,Sample.P3_Normal-cellType.Fibroblast,stromal,fibroblasts,fibroblasts,stromal
+Sample.P3_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P3_Normal-cellType.Keratinocyte,Ji2020,Sample.P3_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P3_Normal-cellType.MDSC,MDSC,Sample.P3_Normal-cellType.MDSC,Ji2020,Sample.P3_Normal-cellType.MDSC,myeloid,MDSC,MDSC,myeloid
+Sample.P3_Normal-cellType.Mac,Mac,Sample.P3_Normal-cellType.Mac,Ji2020,Sample.P3_Normal-cellType.Mac,myeloid,macrophages,macrophages,myeloid
+Sample.P3_Normal-cellType.Melanocyte,Melanocyte,Sample.P3_Normal-cellType.Melanocyte,Ji2020,Sample.P3_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P3_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P3_Normal-cellType.Pilosebaceous,Ji2020,Sample.P3_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P3_Normal-cellType.T CD8,T CD8,Sample.P3_Normal-cellType.T CD8,Ji2020,Sample.P3_Normal-cellType.T CD8,stromal,T CD8,T CD8,stromal
+Sample.P3_Normal-cellType.dendritic,dendritic,Sample.P3_Normal-cellType.dendritic,Ji2020,Sample.P3_Normal-cellType.dendritic,myeloid,dendritic,dendritic,myeloid
+Sample.P4_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P4_Normal-cellType.Keratinocyte,Ji2020,Sample.P4_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P4_Normal-cellType.Melanocyte,Melanocyte,Sample.P4_Normal-cellType.Melanocyte,Ji2020,Sample.P4_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P4_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P4_Normal-cellType.Pilosebaceous,Ji2020,Sample.P4_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P4_Normal-cellType.dendritic,dendritic,Sample.P4_Normal-cellType.dendritic,Ji2020,Sample.P4_Normal-cellType.dendritic,myeloid,dendritic,dendritic,myeloid
+Sample.P5_Normal-cellType.Endothelial Cell,Endothelial Cell,Sample.P5_Normal-cellType.Endothelial Cell,Ji2020,Sample.P5_Normal-cellType.Endothelial Cell,stromal,endothelial,endothelial,stromal
+Sample.P5_Normal-cellType.Fibroblast,Fibroblast,Sample.P5_Normal-cellType.Fibroblast,Ji2020,Sample.P5_Normal-cellType.Fibroblast,stromal,fibroblasts,fibroblasts,stromal
+Sample.P5_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P5_Normal-cellType.Keratinocyte,Ji2020,Sample.P5_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P5_Normal-cellType.MDSC,MDSC,Sample.P5_Normal-cellType.MDSC,Ji2020,Sample.P5_Normal-cellType.MDSC,myeloid,MDSC,MDSC,myeloid
+Sample.P5_Normal-cellType.Mac,Mac,Sample.P5_Normal-cellType.Mac,Ji2020,Sample.P5_Normal-cellType.Mac,myeloid,macrophages,macrophages,myeloid
+Sample.P5_Normal-cellType.Melanocyte,Melanocyte,Sample.P5_Normal-cellType.Melanocyte,Ji2020,Sample.P5_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P5_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P5_Normal-cellType.Pilosebaceous,Ji2020,Sample.P5_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P5_Normal-cellType.dendritic,dendritic,Sample.P5_Normal-cellType.dendritic,Ji2020,Sample.P5_Normal-cellType.dendritic,myeloid,dendritic,dendritic,myeloid
+Sample.P6_Normal-cellType.Endothelial Cell,Endothelial Cell,Sample.P6_Normal-cellType.Endothelial Cell,Ji2020,Sample.P6_Normal-cellType.Endothelial Cell,stromal,endothelial,endothelial,stromal
+Sample.P6_Normal-cellType.Fibroblast,Fibroblast,Sample.P6_Normal-cellType.Fibroblast,Ji2020,Sample.P6_Normal-cellType.Fibroblast,stromal,fibroblasts,fibroblasts,stromal
+Sample.P6_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P6_Normal-cellType.Keratinocyte,Ji2020,Sample.P6_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P6_Normal-cellType.Mac,Mac,Sample.P6_Normal-cellType.Mac,Ji2020,Sample.P6_Normal-cellType.Mac,myeloid,macrophages,macrophages,myeloid
+Sample.P6_Normal-cellType.Melanocyte,Melanocyte,Sample.P6_Normal-cellType.Melanocyte,Ji2020,Sample.P6_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P6_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P6_Normal-cellType.Pilosebaceous,Ji2020,Sample.P6_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P6_Normal-cellType.T CD8,T CD8,Sample.P6_Normal-cellType.T CD8,Ji2020,Sample.P6_Normal-cellType.T CD8,stromal,T CD8,T CD8,stromal
+Sample.P6_Normal-cellType.dendritic,dendritic,Sample.P6_Normal-cellType.dendritic,Ji2020,Sample.P6_Normal-cellType.dendritic,myeloid,dendritic,dendritic,myeloid
+Sample.P7_Normal-cellType.Endothelial Cell,Endothelial Cell,Sample.P7_Normal-cellType.Endothelial Cell,Ji2020,Sample.P7_Normal-cellType.Endothelial Cell,stromal,endothelial,endothelial,stromal
+Sample.P7_Normal-cellType.Fibroblast,Fibroblast,Sample.P7_Normal-cellType.Fibroblast,Ji2020,Sample.P7_Normal-cellType.Fibroblast,stromal,fibroblasts,fibroblasts,stromal
+Sample.P7_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P7_Normal-cellType.Keratinocyte,Ji2020,Sample.P7_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P7_Normal-cellType.MDSC,MDSC,Sample.P7_Normal-cellType.MDSC,Ji2020,Sample.P7_Normal-cellType.MDSC,myeloid,MDSC,MDSC,myeloid
+Sample.P7_Normal-cellType.Mac,Mac,Sample.P7_Normal-cellType.Mac,Ji2020,Sample.P7_Normal-cellType.Mac,myeloid,macrophages,macrophages,myeloid
+Sample.P7_Normal-cellType.Melanocyte,Melanocyte,Sample.P7_Normal-cellType.Melanocyte,Ji2020,Sample.P7_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P7_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P7_Normal-cellType.Pilosebaceous,Ji2020,Sample.P7_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P7_Normal-cellType.T CD8,T CD8,Sample.P7_Normal-cellType.T CD8,Ji2020,Sample.P7_Normal-cellType.T CD8,stromal,T CD8,T CD8,stromal
+Sample.P7_Normal-cellType.dendritic,dendritic,Sample.P7_Normal-cellType.dendritic,Ji2020,Sample.P7_Normal-cellType.dendritic,myeloid,dendritic,dendritic,myeloid
+Sample.P8_Normal-cellType.Endothelial Cell,Endothelial Cell,Sample.P8_Normal-cellType.Endothelial Cell,Ji2020,Sample.P8_Normal-cellType.Endothelial Cell,stromal,endothelial,endothelial,stromal
+Sample.P8_Normal-cellType.Fibroblast,Fibroblast,Sample.P8_Normal-cellType.Fibroblast,Ji2020,Sample.P8_Normal-cellType.Fibroblast,stromal,fibroblasts,fibroblasts,stromal
+Sample.P8_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P8_Normal-cellType.Keratinocyte,Ji2020,Sample.P8_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P8_Normal-cellType.MDSC,MDSC,Sample.P8_Normal-cellType.MDSC,Ji2020,Sample.P8_Normal-cellType.MDSC,myeloid,MDSC,MDSC,myeloid
+Sample.P8_Normal-cellType.Melanocyte,Melanocyte,Sample.P8_Normal-cellType.Melanocyte,Ji2020,Sample.P8_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P8_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P8_Normal-cellType.Pilosebaceous,Ji2020,Sample.P8_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P8_Normal-cellType.T CD8,T CD8,Sample.P8_Normal-cellType.T CD8,Ji2020,Sample.P8_Normal-cellType.T CD8,stromal,T CD8,T CD8,stromal
+Sample.P8_Normal-cellType.dendritic,dendritic,Sample.P8_Normal-cellType.dendritic,Ji2020,Sample.P8_Normal-cellType.dendritic,myeloid,dendritic,dendritic,myeloid
+Sample.P9_Normal-cellType.Endothelial Cell,Endothelial Cell,Sample.P9_Normal-cellType.Endothelial Cell,Ji2020,Sample.P9_Normal-cellType.Endothelial Cell,stromal,endothelial,endothelial,stromal
+Sample.P9_Normal-cellType.Fibroblast,Fibroblast,Sample.P9_Normal-cellType.Fibroblast,Ji2020,Sample.P9_Normal-cellType.Fibroblast,stromal,fibroblasts,fibroblasts,stromal
+Sample.P9_Normal-cellType.Keratinocyte,Keratinocyte,Sample.P9_Normal-cellType.Keratinocyte,Ji2020,Sample.P9_Normal-cellType.Keratinocyte,stromal,Keratinocytes,Keratinocytes,stromal
+Sample.P9_Normal-cellType.MDSC,MDSC,Sample.P9_Normal-cellType.MDSC,Ji2020,Sample.P9_Normal-cellType.MDSC,myeloid,MDSC,MDSC,myeloid
+Sample.P9_Normal-cellType.Mac,Mac,Sample.P9_Normal-cellType.Mac,Ji2020,Sample.P9_Normal-cellType.Mac,myeloid,macrophages,macrophages,myeloid
+Sample.P9_Normal-cellType.Melanocyte,Melanocyte,Sample.P9_Normal-cellType.Melanocyte,Ji2020,Sample.P9_Normal-cellType.Melanocyte,stromal,Melanocyte,Melanocyte,stromal
+Sample.P9_Normal-cellType.Pilosebaceous,Pilosebaceous,Sample.P9_Normal-cellType.Pilosebaceous,Ji2020,Sample.P9_Normal-cellType.Pilosebaceous,stromal,Pilosebaceous,Pilosebaceous,stromal
+Sample.P9_Normal-cellType.dendritic,dendritic,Sample.P9_Normal-cellType.dendritic,Ji2020,Sample.P9_Normal-cellType.dendritic,myeloid,dendritic,dendritic,myeloid

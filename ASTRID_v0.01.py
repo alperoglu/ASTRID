@@ -212,7 +212,7 @@ def refstra_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_cl
     # print message that validation is running
     print("Running validation")
 
-    marker_genes = pd.read_csv('/scratch/alper.eroglu/GRINT/data/ExpectedCellTypesMarkers.csv')
+    marker_genes = pd.read_csv('data/ExpectedCellTypesMarkers.csv')
 
     marker_genes_list = []
     for i in range(len(marker_genes)):
@@ -370,7 +370,7 @@ def refstra_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_cl
     odds_ratio_df = np.vstack(results)
     odds_ratio_df = pd.DataFrame(odds_ratio_df, columns=[final_key, "gene", "odds_ratio", "fold_change"])
 
-    dict_data = json.load(open("/scratch/alper.eroglu/GRINT/data/CellTypeAliases.json"))
+    dict_data = json.load(open("data/CellTypeAliases.json"))
 
     # create a boolean variable to store if all the cell types in tableInterest SingleR_CellType column are in dict_data["immune"]
     allImmune = all([cell_type in dict_data["immune"] for cell_type in tableInterest["SingleR_CellType"].unique()])
@@ -453,8 +453,8 @@ def refstra_damage(adata, tableInterest, pseudobulk_matrix, output_clustering_re
     print("Running cancer cell classification")
 
     # infer the chromosome damage
-    referenceCounts = pd.read_csv("/scratch/alper.eroglu/GRINT/data/reference_REFSTRA_SingleR_NormCounts.csv", index_col=0, sep=",")
-    referenceMetadata = pd.read_csv("/scratch/alper.eroglu/GRINT/data/reference_REFSTRA_SingleR_NormCounts_Metadata.csv", index_col=0, sep=",")
+    referenceCounts = pd.read_csv("data/reference_REFSTRA_SingleR_NormCounts.csv", index_col=0, sep=",")
+    referenceMetadata = pd.read_csv("data/reference_REFSTRA_SingleR_NormCounts_Metadata.csv", index_col=0, sep=",")
 
     cnvFC, cnvLoc = calculate_chr_damage(adata, referenceCounts)
     adata.obsm["X_cnv"] = cnvFC.loc[adata.obs_names,:].to_numpy()
@@ -508,8 +508,8 @@ def refstra_damage(adata, tableInterest, pseudobulk_matrix, output_clustering_re
     odds_ratio_df = np.vstack(results)
     odds_ratio_df = pd.DataFrame(odds_ratio_df, columns=[final_key, "gene", "odds_ratio", "fold_change"])
 
-    # oncogenes = pd.read_table("/scratch/alper.eroglu/GRINT/data/IntOGen-DriverGenes_BRCA.tsv")
-    oncogenes = pd.read_table("/scratch/alper.eroglu/GRINT/data/IntOGen-DriverGenes_CSCC.tsv")
+    # oncogenes = pd.read_table("data/IntOGen-DriverGenes_BRCA.tsv")
+    oncogenes = pd.read_table("data/IntOGen-DriverGenes_CSCC.tsv")
     oncogenes = oncogenes[oncogenes.Symbol.isin(adata.var_names)] 
     oncogenes.rename(columns={'Samples (%)': 'SamplesPercentage'}, inplace=True)
 

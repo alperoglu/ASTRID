@@ -15,6 +15,17 @@ import json
 warnings.filterwarnings("ignore")
 
 def evaluate_formula(formula, x):
+    """
+    Evaluates a logical formula based on the provided dictionary.
+
+    Parameters:
+    formula (str): The logical formula to evaluate.
+    x (dict): A dictionary where keys are variable names and values are their truth values.
+
+    Returns:
+    bool: The result of the logical formula.
+    """
+
     if formula == "":
         return True
     if not re.search(r"(x|\(|\)|\+|\!)", formula) and formula not in x.keys():
@@ -28,25 +39,16 @@ def evaluate_formula(formula, x):
     if re.search(r"(x|\(|\))", formula):
         return all([evaluate_formula(f, x) for f in re.split(r"x|\(|\)", formula)])
 
-# def evaluate_formula(formula, x):
-#     if formula == "":
-#         return True
-#     if not re.search(r"(x|\(|\)|\+|\!)", formula) and formula not in x.keys():
-#         return False
-#     if not re.search(r"(x|\(|\)|\+|\!)", formula):
-#         return x[formula]
-#     if not re.search(r"(x|\(|\)|\+)", formula) and re.search(r"!", formula) and formula.replace("!", "") not in x.keys():
-#         return False
-#     if not re.search(r"(x|\(|\)|\+)", formula) and re.search(r"!", formula):
-#         return not x[formula.replace("!", "")]
-#     if not re.search(r"(x|\(|\))", formula) and re.search(r"\+", formula):
-#         return any([evaluate_formula(f, x) for f in formula.split("+")])
-#     if re.search(r"(x|\(|\))", formula):
-#         return all([evaluate_formula(f, x) for f in re.split(r"x|\(|\)", formula)])
-
-
-# entropy function for a array of percentages and return zero if percentage is zero
 def entropy(p):
+    """
+    Calculates the entropy of a list of probabilities.
+
+    Parameters:
+    p (list): A list of probabilities.
+
+    Returns:
+    float: The entropy of the list of probabilities.
+    """
     tmp = 0
     for i in range(len(p)):
         if p[i] == 0:
@@ -56,6 +58,16 @@ def entropy(p):
     return -tmp
 
 def mutual_info_score(contingency=None):
+    """
+    Calculates the mutual information score of a contingency table.
+
+    Parameters:
+    contingency (numpy.ndarray): A contingency table.
+
+    Returns:
+    float: The mutual information score.
+    """
+
     nzx, nzy = np.nonzero(contingency)
     nz_val = contingency[nzx, nzy]
 
@@ -79,6 +91,16 @@ def mutual_info_score(contingency=None):
     return np.clip(mi.sum(), 0.0, None)
 
 def norm_mi(contingency = None, average_method = 'arithmetic'):
+    """
+    Calculates the normalized mutual information score of a contingency table.
+
+    Parameters:
+    contingency (numpy.ndarray): A contingency table.
+    average_method (str): The method to use for averaging the entropies. Options are 'min', 'geometric', 'arithmetic', 'max', 'custom'.
+
+    Returns:
+    float: The normalized mutual information score.
+    """
     
     mi = mutual_info_score(contingency)
     
@@ -99,29 +121,64 @@ def norm_mi(contingency = None, average_method = 'arithmetic'):
 
     return mi / normalizer
 
-# function to calculate the normalized mutual information between two categorical variables from adata.obs using norm_mi function
+
 def calculate_nmi(adata, clustering_key, control_key):
+    """
+    Calculates the normalized mutual information between two categorical variables from adata.obs.
+
+    Parameters:
+    adata (anndata.AnnData): An AnnData object containing the gene expression data and metadata.
+    clustering_key (str): The key of the first categorical variable in adata.obs.
+    control_key (str): The key of the second categorical variable in adata.obs.
+
+    Returns:
+    float: The normalized mutual information between the two categorical variables.
+    """
         
-        # convert the clustering key to string and control key to category 
-        adata.obs[clustering_key] = adata.obs[clustering_key].astype(str)
-        adata.obs[control_key] = adata.obs[control_key].astype("category")
-    
-        # create the confusion matrix 
-        confusion_matrix = pd.crosstab(adata.obs[control_key], adata.obs[clustering_key])
+    # convert the clustering key to string and control key to category 
+    adata.obs[clustering_key] = adata.obs[clustering_key].astype(str)
+    adata.obs[control_key] = adata.obs[control_key].astype("category")
 
-        # normalize the confusion matrix by column so thay they sum up to 1
-        confusion_matrix = confusion_matrix.div(confusion_matrix.values.sum())
+    # create the confusion matrix 
+    confusion_matrix = pd.crosstab(adata.obs[control_key], adata.obs[clustering_key])
 
-        nmi = norm_mi(confusion_matrix.values, average_method="custom")
-    
-        return nmi
+    # normalize the confusion matrix by column so thay they sum up to 1
+    confusion_matrix = confusion_matrix.div(confusion_matrix.values.sum())
+
+    nmi = norm_mi(confusion_matrix.values, average_method="custom")
+
+    return nmi
 
 def get_indices_distances_from_dense_matrix(D, k: int):
+    """
+    Gets the indices and distances of the k nearest neighbors for each point in a dense distance matrix.
+
+    Parameters:
+    D (numpy.ndarray): A dense distance matrix.
+    k (int): The number of nearest neighbors to find.
+
+    Returns:
+    tuple: A tuple containing two numpy.ndarrays. The first array contains the indices of the k nearest neighbors for each point. The second array contains the distances to the k nearest neighbors for each point.
+    """
+
     indices = np.argpartition(D, k, axis=1)[:, :k]
     distances = np.take_along_axis(D, indices, axis=1)
     return indices, distances
 
 def clustering_modularity_custom(adata, distance_key, k: int, resolution, key = "leiden_modularity_"):
+    """
+    Performs Leiden clustering on an AnnData object using a custom modularity function.
+
+    Parameters:
+    adata (anndata.AnnData): An AnnData object containing the gene expression data and metadata.
+    distance_key (str): The key of the distance matrix in adata.obsp.
+    k (int): The number of nearest neighbors to use for the clustering.
+    resolution (float): The resolution to use for the clustering. Higher values result in more clusters.
+    key (str, optional): The key to use for storing the clustering assignments in the AnnData object's obs attribute. Defaults to "leiden_modularity_".
+
+    Returns:
+    anndata.AnnData: The AnnData object with the clustering assignments added.
+    """
     
     indices, distances = get_indices_distances_from_dense_matrix(adata.obsp[distance_key], k=k)
 
@@ -149,6 +206,15 @@ def clustering_modularity_custom(adata, distance_key, k: int, resolution, key = 
     return adata
 
 def normalize_data(adata):
+    """
+    Normalizes the gene expression data in an AnnData object.
+
+    Parameters:
+    adata (anndata.AnnData): An AnnData object containing the gene expression data and metadata.
+
+    Returns:
+    anndata.AnnData: The AnnData object with the normalized gene expression data.
+    """
 
     if "raw" not in adata.layers.keys():
         adata.layers["raw"] = adata.X.copy()
@@ -164,17 +230,25 @@ def normalize_data(adata):
     return adata
 
 def clustering_recipe_custom(adata, k: int, resolution, do_highly_variable = False, clustering_key = "clustering_level_"):
+    """
+    This function performs a custom clustering recipe on the given AnnData object.
+    It normalizes the data, selects highly variable genes, performs PCA, and then performs clustering.
+
+    Parameters:
+    adata (anndata.AnnData): An AnnData object containing the gene expression data and metadata.
+    k (int): The number of neighbors to use for the clustering.
+    resolution (float): The resolution to use for the clustering. Higher values result in more clusters.
+    do_highly_variable (bool, optional): Whether to select highly variable genes before performing PCA. Defaults to False.
+    clustering_key (str, optional): The key to use for storing the clustering assignments in the AnnData object's obs attribute. Defaults to "clustering_level_".
+
+    Returns:
+    anndata.AnnData: The AnnData object with the clustering assignments added.
+    """
+    
     adata = normalize_data(adata)
     ndims_measured = max(2, np.floor(adata.n_obs/100).astype(int))
 
-    # # check the median total counts of the cells in the cluster from the raw data and if it is less than 1500 set do highly variable to False
-    # total_counts = np.ravel(adata.layers["raw"].sum(axis=1))
-    # median_total_counts = np.median(total_counts)
-    # 
-    # if median_total_counts < 1500 and do_highly_variable:
-    #     do_highly_variable = False
-
-    if do_highly_variable: # and ndims_measured != 2:
+    if do_highly_variable:
         bin_count = max(20, int(np.floor(adata.n_vars/1000)))
 
         sc.pp.highly_variable_genes(adata, flavor="seurat", min_disp=0.5, max_mean=np.inf, min_mean = np.log(2), n_bins = bin_count, layer = "norm_counts")
@@ -187,7 +261,6 @@ def clustering_recipe_custom(adata, k: int, resolution, do_highly_variable = Fal
         if ndims_measured > adata.var_names[adata.var["highly_variable"]].shape[0]:
             ndims_measured = adata.var_names[adata.var["highly_variable"]].shape[0] - 1
 
-    # sc.tl.pca(adata, svd_solver='arpack', n_comps=ndims_measured, use_highly_variable=do_highly_variable and ndims_measured != 2)
     sc.tl.pca(adata, svd_solver='arpack', n_comps=ndims_measured, use_highly_variable=do_highly_variable)
 
     adata.obsm['X_pca_norm_counts'] = adata.obsm['X_pca']
@@ -201,27 +274,40 @@ def clustering_recipe_custom(adata, k: int, resolution, do_highly_variable = Fal
     return adata
 
 def runSingleR(adata_file, output_file, rscript_path = '/scratch/alper.eroglu/miniconda3/envs/r4/bin/Rscript'):
-    # os.system('mkdir '+tmpPath)
-    # print('Writing files ...')
-    # dat.write_h5ad(tmpPath+'/tmp_singler.h5ad')
+
     print('Running SingleR ...')
-    os.system('nice -19 ' + rscript_path + ' /scratch/alper.eroglu/GRINT/GRINT_R/RunSingleR.R '+adata_file + ' ' + output_file)
+    os.system('nice -19 ' + rscript_path + ' RunSingleR.R '+adata_file + ' ' + output_file)
     result=pd.read_csv(output_file)
-    #os.system('rm -r /scratch/jakob.rosenbauer/data_local/scRNAseq/tmpSR/')
+
+    print('SingleR completed.')
+    
     return result
 
 def plot_confusion_matrix(adata, clustering_key, control_key, output_file):
+    """
+    This function plots a confusion matrix for the given clustering and control keys in the AnnData object.
+    It also plots UMAP visualizations for the clustering and control keys, and a bar plot of the cluster counts.
+
+    Parameters:
+    adata (anndata.AnnData): An AnnData object containing the gene expression data and metadata.
+    clustering_key (str): The key in the AnnData object's obs attribute that contains the clustering assignments.
+    control_key (str): The key in the AnnData object's obs attribute that contains the control assignments.
+    output_file (str): The path to the file where the plot should be saved.
+
+    Returns:
+    None
+    """
     
-    # convert the clustering key to string and control key to category 
+    # Convert the clustering key to string and control key to category 
     adata.obs[clustering_key] = adata.obs[clustering_key].astype(str)
     adata.obs[control_key] = adata.obs[control_key].astype("category")
 
-    # create the confusion matrix 
+    # Create the confusion matrix 
     confusion_matrix = pd.crosstab(adata.obs[control_key], adata.obs[clustering_key], margins=True)
     confusion_matrix = confusion_matrix.drop('All', axis=1)
     confusion_matrix = confusion_matrix.drop('All', axis=0)
 
-    # normalize the confusion matrix by column so thay they sum up to 1
+    # Normalize the confusion matrix by column so that they sum up to 1
     confusion_matrix = confusion_matrix.div(confusion_matrix.sum(axis=0), axis=1)
 
     fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(10,10), gridspec_kw={'wspace':0.5})
@@ -234,7 +320,7 @@ def plot_confusion_matrix(adata, clustering_key, control_key, output_file):
 
     confusion_matrix = pd.crosstab(adata.obs[control_key], adata.obs[clustering_key])
 
-    # normalize the confusion matrix by column so thay they sum up to 1
+    # Normalize the confusion matrix by column so that they sum up to 1
     confusion_matrix = confusion_matrix.div(confusion_matrix.values.sum())
 
     nmi = norm_mi(confusion_matrix.values, average_method="custom")
@@ -250,6 +336,16 @@ def plot_confusion_matrix(adata, clustering_key, control_key, output_file):
     plt.savefig(output_file, bbox_inches='tight')
 
 def odds_ratio_differential(refCounts, otherCounts):
+    """
+    This function calculates the log odds ratio of the reference counts to the other counts.
+
+    Parameters:
+    refCounts (numpy.array): An array containing the reference counts.
+    otherCounts (numpy.array): An array containing the other counts.
+
+    Returns:
+    float: The log odds ratio of the reference counts to the other counts.
+    """
     
     totalRefCounts = np.sum(refCounts)
     totalOtherCounts = np.sum(otherCounts)
@@ -264,6 +360,19 @@ def odds_ratio_differential(refCounts, otherCounts):
     return result
 
 def odds_ratio_differential_efficient(refCounts, totalRefCounts, otherCounts, totalOtherCounts):
+    """
+    This function calculates the log odds ratio of the reference counts to the other counts.
+    Unlike the previous function, this function takes the total counts as parameters, which makes it more efficient if the total counts have already been calculated.
+
+    Parameters:
+    refCounts (numpy.array): An array containing the reference counts.
+    totalRefCounts (int): The total reference counts.
+    otherCounts (numpy.array): An array containing the other counts.
+    totalOtherCounts (int): The total other counts.
+
+    Returns:
+    float: The log odds ratio of the reference counts to the other counts.
+    """
         
     term1 = betaln(refCounts + 1, totalRefCounts - refCounts + 1)
     term2 = betaln(otherCounts + 1, totalOtherCounts - otherCounts + 1)
@@ -275,6 +384,19 @@ def odds_ratio_differential_efficient(refCounts, totalRefCounts, otherCounts, to
     return result
 
 def process_cluster(params):
+    """
+    This function processes a single cluster of cells, performing additional clustering if the cluster is large enough.
+
+    Parameters:
+    params (tuple): A tuple containing the following parameters:
+        cl1 (str): The identifier of the cluster to process.
+        current_clustering_level (int): The current level of clustering.
+        tmp_adata (anndata.AnnData): An AnnData object containing the gene expression data for the cluster.
+        n_obs (int): The total number of observations (cells) in the original dataset.
+
+    Returns:
+    pandas.Series: A series containing the new cluster assignments for the cells in the cluster.
+    """
 
     cl1, current_clustering_level, tmp_adata, n_obs = params
 
@@ -282,7 +404,6 @@ def process_cluster(params):
         del tmp_adata.uns["log1p"]  
 
     new_key = "clustering_level_" + str(current_clustering_level)
-    # tmp_adata = adata[adata.obs["clustering_level_" + str(current_clustering_level - 1)] == cl1].copy()
 
     if tmp_adata.n_obs < 13 or tmp_adata.n_obs < (n_obs / 1000):
         tmp_adata.obs[new_key] = str(cl1)
@@ -295,7 +416,6 @@ def process_cluster(params):
         if len(clustersFound) < 2:
             tmp_adata.obs.loc[tmp_adata.obs[new_key] != "unassigned", new_key] = str(cl1)
         else:
-            # add the level 1 cluster to the level 2 cluster
             tmp_adata.obs[new_key] = str(cl1) + "_" + tmp_adata.obs[new_key]
 
     return tmp_adata.obs.loc[:, new_key]
@@ -330,7 +450,7 @@ def calculate_odds_ratios(params):
     foldChanges = (countsRef/countsRef.sum()) / (countsRest/countsRest.sum())
 
     if referenceCounts is None and len(params) == 4:
-        dict_data = json.load(open("/scratch/alper.eroglu/GRINT/data/CellTypeAliases.json"))
+        dict_data = json.load(open("data/CellTypeAliases.json"))
 
         ## special case for CD4
         if "CD4" in pseudobulk_matrix.columns:
@@ -399,21 +519,37 @@ def calculate_odds_ratios(params):
     return np.column_stack((np.repeat(cl2, len(oddsRatios)), pseudobulk_matrix.columns, oddsRatios, foldChanges))
 
 def calculate_chr_damage(adata, tempRef):
+    """
+    This function calculates chromosomal damage based on gene expression data.
+
+    Parameters:
+    adata (anndata.AnnData): An AnnData object containing the gene expression data.
+    tempRef (pandas.DataFrame): A DataFrame containing reference gene expression data.
+
+    Returns:
+    cnvFC (pandas.DataFrame): A DataFrame containing the copy number variation for each cell.
+    cnvLoc (dict): A dictionary containing the location of the copy number variation.
+    """
     from infercnvpy.io import genomic_position_from_gtf
     from infercnvpy.tl import infercnv
     
+    # Copy the input AnnData object
     cnv_adata = adata.copy()
 
-    genomic_position_from_gtf("/scratch/alper.eroglu/GRINT/data/Homo_sapiens.GRCh38.110.gtf.gz", adata=cnv_adata)
+    # Add genomic position information to the AnnData object
+    genomic_position_from_gtf("data/Homo_sapiens.GRCh38.110.gtf.gz", adata=cnv_adata)
 
+    # Add 'chr' prefix to chromosome names and filter out null and sex chromosomes
     cnv_adata.var['chromosome'] = cnv_adata.var['chromosome'].apply(lambda x: 'chr' + str(x) if pd.notnull(x) else x)
     var_mask = cnv_adata.var["chromosome"].isnull()
     var_mask = var_mask | cnv_adata.var["chromosome"].isin(["chrX", "chrY"])
     cnv_adata = cnv_adata[:, ~var_mask]    
 
+    # Filter out genes not present in the reference
     common_genes = cnv_adata.var_names[cnv_adata.var_names.isin(tempRef.index)]
     cnv_adata = cnv_adata[:, common_genes]
 
+    # Normalize the counts in the AnnData object
     cnv_adata.X = cnv_adata.layers["raw"].todense()
     median_total_counts = 1e5
     scaling_factor = median_total_counts / cnv_adata.X.sum(axis=1)
@@ -421,17 +557,19 @@ def calculate_chr_damage(adata, tempRef):
     sc.pp.log1p(cnv_adata, layer='norm_counts', base = 10)
     cnv_adata.X = cnv_adata.layers["norm_counts"]
 
+    # Normalize the reference and calculate the mean log-transformed reference
     tempRef = tempRef.loc[common_genes, :].to_numpy()
     tempRef = tempRef / tempRef.sum(axis=0)
     tempRef = np.log10(tempRef * median_total_counts + 1)
     tempRef = tempRef.mean(axis=1)
     tempRef = tempRef[np.newaxis,:]
 
+    # Infer copy number variation
     infercnv(cnv_adata, reference=tempRef, reference_cat=None, reference_key=None, key_added="cnv" )
 
+    # Extract the copy number variation and its location
     cnvFC = cnv_adata.obsm["X_cnv"].toarray()
     cnvFC = pd.DataFrame(cnvFC, index=cnv_adata.obs_names)
-
     cnvLoc = cnv_adata.uns["cnv"]
 
     return cnvFC, cnvLoc

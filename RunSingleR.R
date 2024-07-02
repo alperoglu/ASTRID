@@ -9,12 +9,11 @@ args <- commandArgs(TRUE)
 input_adata <- args[1]
 output_csv <- args[2]
 
-excludeSamples <- read.table(file = "/scratch/alper.eroglu/GRINT/GRINT_R/excludeSingleR.csv", header = T, sep = ",")
+excludeSamples <- read.table(file = "data/excludeSingleR.csv", header = T, sep = ",")
 
 pseudobulk_matrix <- read.csv(input_adata, row.names=1)
 
-# newRef <- readRDS("/scratch/alper.eroglu/GRINT/data/ASTRID_SingleR_Reference_20240408.Rds")
-newRef <- readRDS("/scratch/alper.eroglu/GRINT/data/ASTRID_SingleR_Reference_20240422.Rds")
+newRef <- readRDS("data/ASTRID_SingleR_Reference_20240701.Rds")
 
 if(nrow(excludeSamples > 0)){
   
@@ -38,8 +37,5 @@ newRefCounts <- sweep(newRefCounts,2,colSums(newRefCounts), `/`)
 newRefCounts <- log10(newRefCounts *1e5 + 1)
 
 predictions <- SingleR(pseudobulk_matrix, ref = newRefCounts, labels = newRef$cellTypeGRINT, de.n = 50)
-
-# predictions <- SingleR(test = obj.sce, ref = hpca.se, assay.type.test="logcounts", assay.type.ref = "logcounts",
-#                        labels = hpca.se$label.fine, clusters = obj.sce$clustering_level_2)
 
 write.table(predictions, file = output_csv, sep = ",", quote = F)

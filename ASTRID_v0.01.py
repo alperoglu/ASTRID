@@ -10,6 +10,9 @@ import time
 import json
 from ASTRID_Tools import clustering_recipe_custom, process_cluster, calculate_nmi, plot_confusion_matrix, runSingleR, evaluate_formula, calculate_odds_ratios, calculate_chr_damage
 
+from os.path import abspath, dirname
+os.chdir(dirname(abspath(__file__)))
+
 warnings.filterwarnings("ignore")
 plt.rcParams['figure.figsize']=(5,5) #rescale figures
 plt.rcParams['pdf.fonttype']=42 #for vectorized text in pdfs

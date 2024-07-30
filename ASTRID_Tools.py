@@ -276,7 +276,7 @@ def clustering_recipe_custom(adata, k: int, resolution, do_highly_variable = Fal
 def runSingleR(adata_file, output_file, rscript_path = '/scratch/alper.eroglu/miniconda3/envs/r4/bin/Rscript'):
 
     print('Running SingleR ...')
-    os.system('nice -19 ' + rscript_path + ' RunSingleR.R '+adata_file + ' ' + output_file)
+    os.system('nice -19 ' + rscript_path + ' /scratch/alper.eroglu/tools/ASTRID/RunSingleR.R '+adata_file + ' ' + output_file)
     result=pd.read_csv(output_file)
 
     print('SingleR completed.')

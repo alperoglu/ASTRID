@@ -4,6 +4,7 @@ suppressMessages(library(Matrix))
 suppressMessages(library(SingleCellExperiment))
 suppressMessages(library(SingleR))
 
+setwd("/scratch/alper.eroglu/tools/ASTRID/")
 args <- commandArgs(TRUE)
 
 input_adata <- args[1]

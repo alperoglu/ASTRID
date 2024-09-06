@@ -27,7 +27,7 @@ options:
 
 ```
 
-Example bash script in RunASTRID_Ji.sh.
+Example bash script in ***RunASTRID_Ji.sh***.
 
 ### **Requirements**
 

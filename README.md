@@ -28,3 +28,27 @@ options:
 ```
 
 Example bash script in RunASTRID_Ji.sh.
+
+### **Requirements**
+
+* Python (tested in version Python 3.10.10)
+  * Numpy - 1.23.4
+  * Pandas - 2.2.2
+  * Scanpy - 1.9.3
+  * scikit-learn - 1.5.0
+  * scipy - 1.8.1
+  * seaborn - 0.12.2
+  * leidenalg - 0.9.1
+  * matplotlib - 3.7.2
+  * regex
+  * infercnvpy - 0.4.3
+  * colorir - 2.0.0
+  * umap-learn 0.5.3
+  * adpbulk - 0.1.3    
+
+* R (tested in R version 4.3.3)
+  * SingleR - 2.4.1
+  * tidyverse - 2.0.0
+  * Matrix - 1.6-5
+  * SingleCellExperiment - 1.24.0
+

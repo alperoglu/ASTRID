@@ -13,17 +13,17 @@ options:
   --validation          Run validation
   --damage              Run cancer damage
   --input_file INPUT_FILE
-                        Input file path
+                        Input file path (/your/input/folder/file.h5ad)
   --input_prefix INPUT_PREFIX
-                        Input prefix
+                        Input prefix (Sample0)
   --output_file OUTPUT_FILE
-                        Output file path
+                        Output file path (/your/output/folder/file.h5ad)
   --output_clustering_results OUTPUT_CLUSTERING_RESULTS
-                        Output clustering results path
+                        Output clustering results path (/your/output/folder/astrid_output_file.csv)
   --final_key FINAL_KEY
-                        Key for final level of clustering (column in AnnData.obs)
+                        Key for final level of clustering (ASTRID_Clusters) (column in AnnData.obs) 
   --author_type AUTHOR_TYPE
-                        Author cell type column name
+                        Author cell type column name (column in AnnData.obs)
 
 ```
 

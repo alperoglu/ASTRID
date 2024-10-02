@@ -19,7 +19,7 @@ plt.rcParams['pdf.fonttype']=42 #for vectorized text in pdfs
 sns.set_theme(style="white")
 
 
-def refstra_clustering(adata, input_prefix, outDir):
+def refstra_clustering(adata, input_prefix, outDir, cutoff_level=None):
 
     from multiprocessing import Pool
     from umap import UMAP
@@ -50,6 +50,15 @@ def refstra_clustering(adata, input_prefix, outDir):
     print("First level of clustering done")
     print("Number of clusters: " + str(adata.obs["clustering_level_1"].nunique()))
     print("Normalized mutual information between clustering_level_1 and " + adata.uns["authorType"] + ": " + str(calculate_nmi(adata, "clustering_level_1", adata.uns["authorType"])))
+
+    if cutoff_level is not None and cutoff_level == 1:
+
+        adata.obs["clustering_level_1"] = adata.obs["clustering_level_1"].astype(str)
+
+        adata.uns["final_clustering_level"] = "clustering_level_1"
+        adata.obs["final_clustering_level"] = adata.obs["clustering_level_1"]
+
+        return adata
 
     clusters = adata.obs["clustering_level_1"].unique().tolist()
 
@@ -85,7 +94,12 @@ def refstra_clustering(adata, input_prefix, outDir):
 
     current_clustering_level = 3
 
-    while current_clustering_level < 12 and adata.obs["clustering_level_" + str(current_clustering_level-2)].to_list() != adata.obs["clustering_level_" + str(current_clustering_level-1)].to_list():
+    clustering_depth = 12
+
+    if cutoff_level is not None:
+        clustering_depth = cutoff_level
+
+    while current_clustering_level < clustering_depth and adata.obs["clustering_level_" + str(current_clustering_level-2)].to_list() != adata.obs["clustering_level_" + str(current_clustering_level-1)].to_list():
         
         # print(current_clustering_level)
 
@@ -136,7 +150,7 @@ def refstra_clustering(adata, input_prefix, outDir):
     
     return adata
 
-def restra_annotation(adata, output_file, input_prefix, outDir):
+def restra_annotation(adata, output_file, input_prefix, outDir, skip_annotation=False):
 
     from adpbulk import ADPBulk
 
@@ -163,19 +177,27 @@ def restra_annotation(adata, output_file, input_prefix, outDir):
 
     adata.X = adata.layers["norm_counts"]
 
-    singleR_file = os.path.splitext(output_file)[0] + "_singleR_v2.csv"
+    if skip_annotation:
+        print("Annotation skipped, cell types are Undecided")
 
-    singleR_result = runSingleR(adata_file= os.path.splitext(output_file)[0] + "_" + final_key + "_pseudobulk_matrix.csv", output_file=singleR_file, rscript_path="/usr/bin/Rscript")
+        adata.obs["SingleR_CellType"] = "Undecided"
+        adata.obs["SingleR_Pruned_CellType"] = "Undecided"
+        adata.obs["SingleR_All_deltanext"] = 0
 
-    singleR_result = singleR_result.rename(columns={'pruned.labels': 'SingleR_Pruned_CellType', 'labels': 'SingleR_CellType', 'delta.next': 'SingleR_All_deltanext'})
+    else:
+        singleR_file = os.path.splitext(output_file)[0] + "_singleR_v2.csv"
 
-    # drop the columns in adata.obs that start with SingleR if they exist
-    adata.obs = adata.obs.drop(columns=[col for col in adata.obs.columns if col.startswith('SingleR')])
+        singleR_result = runSingleR(adata_file= os.path.splitext(output_file)[0] + "_" + final_key + "_pseudobulk_matrix.csv", output_file=singleR_file, rscript_path="/usr/bin/Rscript")
 
-    # merge only the columns SingleR_All_labels	SingleR_All_delta.next	SingleR_All_CellType from singleR_annotations to adata.obs on the index
-    adata.obs = adata.obs.merge(singleR_result[['SingleR_Pruned_CellType', 'SingleR_All_deltanext', 'SingleR_CellType']], how="left", left_on=final_key, right_index=True)
+        singleR_result = singleR_result.rename(columns={'pruned.labels': 'SingleR_Pruned_CellType', 'labels': 'SingleR_CellType', 'delta.next': 'SingleR_All_deltanext'})
 
-    plot_confusion_matrix(adata, "SingleR_CellType", adata.uns["authorType"], outDir + input_prefix + "_" +  "SingleR_CellType_vs_" + adata.uns["authorType"]+ "_confusion_matrix.pdf")
+        # drop the columns in adata.obs that start with SingleR if they exist
+        adata.obs = adata.obs.drop(columns=[col for col in adata.obs.columns if col.startswith('SingleR')])
+
+        # merge only the columns SingleR_All_labels	SingleR_All_delta.next	SingleR_All_CellType from singleR_annotations to adata.obs on the index
+        adata.obs = adata.obs.merge(singleR_result[['SingleR_Pruned_CellType', 'SingleR_All_deltanext', 'SingleR_CellType']], how="left", left_on=final_key, right_index=True)
+
+        plot_confusion_matrix(adata, "SingleR_CellType", adata.uns["authorType"], outDir + input_prefix + "_" +  "SingleR_CellType_vs_" + adata.uns["authorType"]+ "_confusion_matrix.pdf")
 
     adata.write_h5ad(output_file)
 
@@ -186,7 +208,7 @@ def restra_annotation(adata, output_file, input_prefix, outDir):
     
     return adata
 
-def refstra_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_clustering_results):
+def refstra_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_clustering_results, skip_annotation=False):
 
     from scipy.cluster import hierarchy
     from scipy.spatial import distance
@@ -366,12 +388,16 @@ def refstra_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_cl
 
     clusters = adata.obs[final_key].astype(str).unique()
 
+    # tableInterest.to_csv(outDir + input_prefix + "_tableInterest_df.csv", index=False)
+
     with Pool(processes=10) as pool:
-        results = pool.map(calculate_odds_ratios, zip(clusters, [pseudobulk_matrix] * len(clusters), [tableInterest] * len(clusters), ["SingleR_CellType"] * len(clusters) ))
+        results = pool.map(calculate_odds_ratios, zip(clusters, [pseudobulk_matrix] * len(clusters), [tableInterest] * len(clusters), ["SingleR_CellType"] * len(clusters), [skip_annotation] * len(clusters) ))
 
     # odds_ratio_df = [item for sublist in results for item in sublist]
     odds_ratio_df = np.vstack(results)
     odds_ratio_df = pd.DataFrame(odds_ratio_df, columns=[final_key, "gene", "odds_ratio", "fold_change"])
+
+    # odds_ratio_df.to_csv(outDir + input_prefix + "_odds_ratio_df.csv", index=False)
 
     dict_data = json.load(open("data/CellTypeAliases.json"))
 
@@ -556,6 +582,8 @@ def main():
     parser.add_argument('--annotation', action='store_true', help='Run annotation')
     parser.add_argument('--validation', action='store_true', help='Run validation')
     parser.add_argument('--damage', action='store_true', help='Run cancer damage')
+    parser.add_argument('--skip_cell_typing', action='store_true', help='Skip cell typing and assign "Undecided" to all cells')
+    parser.add_argument('--cutoff_level', type=int, default=None, help='Cut off clustering early at the specified level')
     parser.add_argument('--input_file', type=str, help='Input file path')
     parser.add_argument('--input_prefix', type=str, help='Input prefix')
     parser.add_argument('--output_file', type=str, help='Output file path')
@@ -639,7 +667,7 @@ def main():
                 adata.uns["authorType"] = "cellTypeMinor"
 
             start_time = time.time()
-            adata = refstra_clustering(adata, args.input_prefix, outDir)
+            adata = refstra_clustering(adata, args.input_prefix, outDir, cutoff_level=args.cutoff_level)
             end_time = time.time()
             elapsed_time = end_time - start_time
             print(f"Clustering took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
@@ -667,7 +695,7 @@ def main():
             print("Annotation started for the sample " + args.input_prefix)
 
             start_time = time.time()
-            adata = restra_annotation(adata, args.output_file, args.input_prefix, outDir)
+            adata = restra_annotation(adata, args.output_file, args.input_prefix, outDir, args.skip_cell_typing)
             end_time = time.time()
             elapsed_time = end_time - start_time
             print(f"Annotation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
@@ -704,9 +732,10 @@ def main():
                 raise ValueError("Pseudobulk matrix file " + os.path.splitext(args.output_file)[0] + "_" + final_key + "_pseudobulk_matrix.csv" + " does not exist")
 
             pseudobulk_matrix = pd.read_csv(os.path.splitext(args.output_file)[0] + "_" + final_key + "_pseudobulk_matrix.csv", index_col=0)
+            pseudobulk_matrix.index = pseudobulk_matrix.index.astype(str)
             
             start_time = time.time()
-            tableInterest = refstra_validation(adata, pseudobulk_matrix, args.input_prefix, outDir, args.output_clustering_results)
+            tableInterest = refstra_validation(adata, pseudobulk_matrix, args.input_prefix, outDir, args.output_clustering_results, args.skip_cell_typing)
             end_time = time.time()
             elapsed_time = end_time - start_time
             print(f"Validation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")

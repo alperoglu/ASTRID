@@ -28,16 +28,16 @@ def evaluate_formula(formula, x):
 
     if formula == "":
         return True
-    if not re.search(r"(x|\(|\)|\+|\!)", formula) and formula not in x.keys():
+    if not re.search(r"(\*|\(|\)|\+|\!)", formula) and formula not in x.keys():
         return False
-    if not re.search(r"(x|\(|\)|\+|\!)", formula):
+    if not re.search(r"(\*|\(|\)|\+|\!)", formula):
         return x[formula]
-    if not re.search(r"(x|\(|\)|\+)", formula) and re.search(r"!", formula):
+    if not re.search(r"(\*|\(|\)|\+)", formula) and re.search(r"!", formula):
         return not evaluate_formula(formula.replace("!", ""), x)
-    if not re.search(r"(x|\(|\))", formula) and re.search(r"\+", formula):
+    if not re.search(r"(\*|\(|\))", formula) and re.search(r"\+", formula):
         return any([evaluate_formula(f, x) for f in formula.split("+")])
-    if re.search(r"(x|\(|\))", formula):
-        return all([evaluate_formula(f, x) for f in re.split(r"x|\(|\)", formula)])
+    if re.search(r"(\*|\(|\))", formula):
+        return all([evaluate_formula(f, x) for f in re.split(r"\*|\(|\)", formula)])
 
 def entropy(p):
     """
@@ -434,7 +434,7 @@ def calculate_odds_ratios(params):
     if len(params) == 6:
         cl2, pseudobulk_matrix, referenceCounts, clusterInfo, typeCol, refCol = params
     else:
-        cl2, pseudobulk_matrix, clusterInfo, typeCol = params
+        cl2, pseudobulk_matrix, clusterInfo, typeCol, skip_annotation = params
         referenceCounts = None
 
     cellType = clusterInfo.loc[clusterInfo.iloc[:, 0] == cl2, typeCol].values[0]
@@ -443,13 +443,16 @@ def calculate_odds_ratios(params):
     if referenceCounts is not None:
         countsRest = referenceCounts.loc[referenceCounts[refCol] == cellType, pseudobulk_matrix.columns].sum(axis=0).to_numpy()
     else:
-        dropSamples = clusterInfo.iloc[np.where(clusterInfo[typeCol] == cellType)[0], 0].to_list()
+        if skip_annotation:
+            dropSamples = [cl2]
+        else:
+            dropSamples = clusterInfo.iloc[np.where(clusterInfo[typeCol] == cellType)[0], 0].to_list()
         countsRest = pseudobulk_matrix.loc[~pseudobulk_matrix.index.isin(dropSamples), :].sum(axis=0).to_numpy()
-
+        
     oddsRatios = odds_ratio_differential(countsRef, countsRest)
     foldChanges = (countsRef/countsRef.sum()) / (countsRest/countsRest.sum())
 
-    if referenceCounts is None and len(params) == 4:
+    if referenceCounts is None and len(params) == 5 and ~skip_annotation:
         dict_data = json.load(open("data/CellTypeAliases.json"))
 
         ## special case for CD4

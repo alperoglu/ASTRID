@@ -590,8 +590,10 @@ def main():
     parser.add_argument('--output_clustering_results', type=str, help='Output clustering results path')
     parser.add_argument('--final_key', type=str, help='Key for final level of clustering (column in AnnData.obs)')
     parser.add_argument('--author_type', type=str, help='Author cell type column name')
-    args = parser.parse_args()
+    parser.add_argument('--out_dir', type=str, help='Output directory for plots')
 
+    args = parser.parse_args()
+    
     outDir = "/scratch/alper.eroglu/GRINT/new_outputs/"
 
     if args.all:
@@ -601,11 +603,13 @@ def main():
         # print message saying that the all option is selected and running all tasks
         print("Running all tasks for the sample " + args.input_prefix)
 
-        if not os.path.exists("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix):
-            os.makedirs("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix)
+        if args.out_dir:
+            outDir = args.out_dir + "/" + args.input_prefix + "/"
+        else:
+            outDir = outDir + args.input_prefix + "/"
 
-        # save this folder as an object called outDir
-        outDir = "/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix + "/"
+        if not os.path.exists(outDir):
+            os.makedirs(outDir)
 
         adata = sc.read_h5ad(args.input_file)
 
@@ -647,15 +651,17 @@ def main():
         if args.clustering:
             if not args.input_file or not args.input_prefix or not args.output_clustering_results:
                 raise ValueError("Missing required arguments for running clustering")
-            
-            if not os.path.exists("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix):
-                os.makedirs("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix)
+
+            if args.out_dir:
+                outDir = args.out_dir + "/" + args.input_prefix + "/"
+            else:
+                outDir = outDir + args.input_prefix + "/"
+
+            if not os.path.exists(outDir):
+                os.makedirs(outDir)
 
             # print that clusterinf option is selected
             print("Clustering started for the sample " + args.input_prefix )
-
-            # save this folder as an object called outDir
-            outDir = "/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix + "/"
 
             adata = sc.read_h5ad(args.input_file)
 
@@ -676,10 +682,13 @@ def main():
             if not args.input_file or not args.output_file:
                 raise ValueError("Missing required arguments for running annotation")
 
-            if not os.path.exists("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix):
-                os.makedirs("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix)
-            # save this folder as an object called outDir
-            outDir = "/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix + "/"
+            if args.out_dir:
+                outDir = args.out_dir + "/" + args.input_prefix + "/"
+            else:
+                outDir = outDir + args.input_prefix + "/"
+
+            if not os.path.exists(outDir):
+                os.makedirs(outDir)
 
             #if clustering is not run then read the adata object from the input file else use the adata object from clustering
             if not args.clustering:
@@ -705,10 +714,13 @@ def main():
             if not args.input_file or not args.output_file or not args.output_clustering_results or not args.input_prefix:
                 raise ValueError("Missing required arguments for running validation")
             
-            if not os.path.exists("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix):
-                os.makedirs("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix)
-            # save this folder as an object called outDir
-            outDir = "/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix + "/"
+            if args.out_dir:
+                outDir = args.out_dir + "/" + args.input_prefix + "/"
+            else:
+                outDir = outDir + args.input_prefix + "/"
+
+            if not os.path.exists(outDir):
+                os.makedirs(outDir)
 
             #if annotation is not run then read the adata object from the output file else use the adata object from annotation
             if not args.annotation:
@@ -744,10 +756,13 @@ def main():
             if not args.input_file or not args.output_file or not args.output_clustering_results or not args.input_prefix:
                 raise ValueError("Missing required arguments for running cancer damage")
             
-            if not os.path.exists("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix):
-                os.makedirs("/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix)
-            # save this folder as an object called outDir
-            outDir = "/scratch/alper.eroglu/GRINT/new_outputs/" + args.input_prefix + "/"
+            if args.out_dir:
+                outDir = args.out_dir + "/" + args.input_prefix + "/"
+            else:
+                outDir = outDir + args.input_prefix + "/"
+
+            if not os.path.exists(outDir):
+                os.makedirs(outDir)
 
             #if validation is not run then read the adata object from the output file else use the adata object from validation
             if not args.validation:

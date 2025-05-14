@@ -8,6 +8,7 @@ import sys
 import warnings
 import time
 import json
+import textwrap
 from ASTRID_Tools import clustering_recipe_custom, process_cluster, calculate_nmi, plot_confusion_matrix, runSingleR, evaluate_formula, calculate_odds_ratios, calculate_chr_damage
 
 from os.path import abspath, dirname
@@ -19,7 +20,7 @@ plt.rcParams['pdf.fonttype']=42 #for vectorized text in pdfs
 sns.set_theme(style="white")
 
 
-def refstra_clustering(adata, input_prefix, outDir, cutoff_level=None):
+def astrid_clustering(adata, input_prefix, outDir, cutoff_level=None):
 
     from multiprocessing import Pool
     from umap import UMAP
@@ -150,7 +151,7 @@ def refstra_clustering(adata, input_prefix, outDir, cutoff_level=None):
     
     return adata
 
-def restra_annotation(adata, output_file, input_prefix, outDir, skip_annotation=False):
+def astrid_annotation(adata, output_file, input_prefix, outDir, skip_annotation=False):
 
     from adpbulk import ADPBulk
 
@@ -208,7 +209,7 @@ def restra_annotation(adata, output_file, input_prefix, outDir, skip_annotation=
     
     return adata
 
-def refstra_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_clustering_results, skip_annotation=False):
+def astrid_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_clustering_results, skip_annotation=False):
 
     from scipy.cluster import hierarchy
     from scipy.spatial import distance
@@ -358,18 +359,6 @@ def refstra_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_cl
         adata.obs["is_cancer"] = adata.obs[adata.uns["authorType"]].str.contains('Cancer', case=False)
     if "is_unassigned" not in adata.obs.columns:
         adata.obs["is_unassigned"] = adata.obs[adata.uns["authorType"]].isin(["unassigned", "nan", "Unassigned"])
-
-    ###################################### TO REMOVE ######################################
-    ###################################### TO REMOVE ######################################
-    ###################################### TO REMOVE ######################################
-    ###################################### TO REMOVE ######################################
-
-    # adata.obs.loc[adata.obs["level2_celltype"] == "TSK", "is_cancer"] = True
-
-    ###################################### TO REMOVE ######################################
-    ###################################### TO REMOVE ######################################
-    ###################################### TO REMOVE ######################################
-    ###################################### TO REMOVE ######################################
     
     # for each cluster in the final_key column of adata.obs, calculate the percentage of cells that have is_cancer == True and create a dataframe with the cluster names and percentages and merge with tableInterest
     cancer_percentages = adata.obs.groupby(final_key)["is_cancer"].apply(lambda x: (x == True).sum() / len(x)).reset_index()
@@ -456,7 +445,7 @@ def refstra_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_cl
 
     return tableInterest
 
-def refstra_damage(adata, tableInterest, pseudobulk_matrix, output_clustering_results, output_file):
+def astrid_damage(adata, tableInterest, pseudobulk_matrix, output_clustering_results, output_file):
 
     from multiprocessing import Pool
 
@@ -594,7 +583,7 @@ def main():
 
     args = parser.parse_args()
     
-    outDir = "/scratch/alper.eroglu/GRINT/new_outputs/"
+    outDir = os.getcwd()
 
     if args.all:
         if not args.input_file or not args.input_prefix or not args.output_file or not args.output_clustering_results:
@@ -607,9 +596,11 @@ def main():
             outDir = args.out_dir + "/" + args.input_prefix + "/"
         else:
             outDir = outDir + args.input_prefix + "/"
-
+        
         if not os.path.exists(outDir):
             os.makedirs(outDir)
+
+        print("Outputs written into " + outDir)
 
         adata = sc.read_h5ad(args.input_file)
 
@@ -621,13 +612,13 @@ def main():
             adata.uns["authorType"] = "cellTypeMinor"
 
         start_time = time.time()
-        adata = refstra_clustering(adata, args.input_prefix, outDir)
+        adata = astrid_clustering(adata, args.input_prefix, outDir)
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"Clustering took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
         
         start_time = time.time()
-        adata = restra_annotation(adata, args.output_file, args.input_prefix, outDir)
+        adata = astrid_annotation(adata, args.output_file, args.input_prefix, outDir)
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"Annotation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
@@ -636,17 +627,29 @@ def main():
         pseudobulk_matrix = pd.read_csv(os.path.splitext(args.output_file)[0] + "_" + final_key + "_pseudobulk_matrix.csv", index_col=0)
 
         start_time = time.time()
-        tableInterest = refstra_validation(adata, pseudobulk_matrix, args.input_prefix, outDir, args.output_clustering_results)
+        tableInterest = astrid_validation(adata, pseudobulk_matrix, args.input_prefix, outDir, args.output_clustering_results)
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"Validation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
 
         start_time = time.time()
-        refstra_damage(adata, tableInterest, pseudobulk_matrix, args.output_clustering_results, args.output_file)
+        astrid_damage(adata, tableInterest, pseudobulk_matrix, args.output_clustering_results, args.output_file)
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"Cancer damage estimation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
 
+        # Print the output directory and its contents in abbreviated format
+        print("Outputs:")
+        print(f"Directory: {outDir}")
+
+        # List the files in the output directory
+        files = os.listdir(outDir)
+
+        # Abbreviate and print the file names
+        for file in files:
+            abbreviated_file = textwrap.shorten(file, width=50, placeholder="...")
+            print(f"  {abbreviated_file}")
+        
     else:
         if args.clustering:
             if not args.input_file or not args.input_prefix or not args.output_clustering_results:
@@ -659,6 +662,8 @@ def main():
 
             if not os.path.exists(outDir):
                 os.makedirs(outDir)
+
+            print("Outputs written into " + outDir + "for clustering.")
 
             # print that clusterinf option is selected
             print("Clustering started for the sample " + args.input_prefix )
@@ -673,10 +678,11 @@ def main():
                 adata.uns["authorType"] = "cellTypeMinor"
 
             start_time = time.time()
-            adata = refstra_clustering(adata, args.input_prefix, outDir, cutoff_level=args.cutoff_level)
+            adata = astrid_clustering(adata, args.input_prefix, outDir, cutoff_level=args.cutoff_level)
             end_time = time.time()
             elapsed_time = end_time - start_time
             print(f"Clustering took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
+            print("Outputs ")
 
         if args.annotation:
             if not args.input_file or not args.output_file:
@@ -689,6 +695,8 @@ def main():
 
             if not os.path.exists(outDir):
                 os.makedirs(outDir)
+
+            print("Outputs written into " + outDir + "for annotation.")
 
             #if clustering is not run then read the adata object from the input file else use the adata object from clustering
             if not args.clustering:
@@ -704,7 +712,7 @@ def main():
             print("Annotation started for the sample " + args.input_prefix)
 
             start_time = time.time()
-            adata = restra_annotation(adata, args.output_file, args.input_prefix, outDir, args.skip_cell_typing)
+            adata = astrid_annotation(adata, args.output_file, args.input_prefix, outDir, args.skip_cell_typing)
             end_time = time.time()
             elapsed_time = end_time - start_time
             print(f"Annotation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
@@ -721,6 +729,8 @@ def main():
 
             if not os.path.exists(outDir):
                 os.makedirs(outDir)
+
+            print("Outputs written into " + outDir + "for validation.")
 
             #if annotation is not run then read the adata object from the output file else use the adata object from annotation
             if not args.annotation:
@@ -747,7 +757,7 @@ def main():
             pseudobulk_matrix.index = pseudobulk_matrix.index.astype(str)
             
             start_time = time.time()
-            tableInterest = refstra_validation(adata, pseudobulk_matrix, args.input_prefix, outDir, args.output_clustering_results, args.skip_cell_typing)
+            tableInterest = astrid_validation(adata, pseudobulk_matrix, args.input_prefix, outDir, args.output_clustering_results, args.skip_cell_typing)
             end_time = time.time()
             elapsed_time = end_time - start_time
             print(f"Validation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
@@ -789,10 +799,22 @@ def main():
             pseudobulk_matrix = pd.read_csv(os.path.splitext(args.output_file)[0] + "_" + final_key + "_pseudobulk_matrix.csv", index_col=0)
             
             start_time = time.time()
-            refstra_damage(adata, tableInterest, pseudobulk_matrix, args.output_clustering_results, args.output_file)
+            astrid_damage(adata, tableInterest, pseudobulk_matrix, args.output_clustering_results, args.output_file)
             end_time = time.time()
             elapsed_time = end_time - start_time
             print(f"Cancer damage estimation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
+
+        # Print the output directory and its contents in abbreviated format
+        print("Outputs:")
+        print(f"Directory: {outDir}")
+
+        # List the files in the output directory
+        files = os.listdir(outDir)
+
+        # Abbreviate and print the file names
+        for file in files:
+            abbreviated_file = textwrap.shorten(file, width=50, placeholder="...")
+            print(f"  {abbreviated_file}")
 
         # if no task is selected then give a warning, show the help message and exit
         if not args.clustering and not args.annotation and not args.validation and not args.all and not args.damage:

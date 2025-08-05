@@ -9,17 +9,25 @@ args <- commandArgs(TRUE)
 
 input_adata <- args[1]
 output_csv <- args[2]
-
-excludeSamples <- read.table(file = "data/excludeSingleR.csv", header = T, sep = ",")
+species <- args[3]
 
 pseudobulk_matrix <- read.csv(input_adata, row.names=1)
 
-newRef <- readRDS("data/ASTRID_SingleR_Reference_20240701.Rds")
+if(species == "human"){
+  excludeSamples <- read.table(file = "data/excludeSingleR.csv", header = T, sep = ",")
+  newRef <- readRDS("data/ASTRID_SingleR_Reference_20240701.Rds")
 
-if(nrow(excludeSamples > 0)){
-  
-  newRef <- newRef[,!(colnames(newRef) %in% excludeSamples$samples)]
-  
+  if(nrow(excludeSamples > 0)){
+    
+    newRef <- newRef[,!(colnames(newRef) %in% excludeSamples$samples)]
+    
+  }
+
+}else if (species == "mouse") {
+   newRef <- readRDS("data/ASTRID_SingleR_Reference_mouse_20250805.Rds")
+}else{
+  print("Invalid species entered!")
+  return(0)
 }
 
 newRefCounts <- assays(newRef)[["counts"]]

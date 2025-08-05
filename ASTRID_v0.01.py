@@ -151,7 +151,7 @@ def astrid_clustering(adata, input_prefix, outDir, cutoff_level=None):
     
     return adata
 
-def astrid_annotation(adata, output_file, input_prefix, outDir, skip_annotation=False):
+def astrid_annotation(adata, output_file, input_prefix, outDir, species = "human", skip_annotation=False):
 
     from adpbulk import ADPBulk
 
@@ -188,7 +188,7 @@ def astrid_annotation(adata, output_file, input_prefix, outDir, skip_annotation=
     else:
         singleR_file = os.path.splitext(output_file)[0] + "_singleR_v2.csv"
 
-        singleR_result = runSingleR(adata_file= os.path.splitext(output_file)[0] + "_" + final_key + "_pseudobulk_matrix.csv", output_file=singleR_file, rscript_path="/usr/bin/Rscript")
+        singleR_result = runSingleR(adata_file= os.path.splitext(output_file)[0] + "_" + final_key + "_pseudobulk_matrix.csv", output_file=singleR_file, species=species, rscript_path="/usr/bin/Rscript")
 
         singleR_result = singleR_result.rename(columns={'pruned.labels': 'SingleR_Pruned_CellType', 'labels': 'SingleR_CellType', 'delta.next': 'SingleR_All_deltanext'})
 
@@ -333,6 +333,9 @@ def astrid_validation(adata, pseudobulk_matrix, input_prefix, outDir, output_clu
     
     cellCount = adata.obs.groupby([final_key]).size().reset_index(name='CellCount')
     uniqueClusters = pd.merge(uniqueClusters, cellCount, on=final_key, how="left")
+
+    if "total_counts" not in adata.obs.columns:
+        adata.obs["total_counts"] = adata.layers["raw"].sum(axis=1)
 
     totalCount = adata.obs.groupby([final_key])["total_counts"].sum().reset_index(name='TotalDepth')
     uniqueClusters = pd.merge(uniqueClusters, totalCount, on=final_key, how="left")
@@ -579,6 +582,7 @@ def main():
     parser.add_argument('--output_clustering_results', type=str, help='Output clustering results path')
     parser.add_argument('--final_key', type=str, help='Key for final level of clustering (column in AnnData.obs)')
     parser.add_argument('--author_type', type=str, help='Author cell type column name')
+    parser.add_argument('--species', type=str, default="human", help='Species of dataset. (human/mouse)')
     parser.add_argument('--out_dir', type=str, help='Output directory for plots')
 
     args = parser.parse_args()
@@ -618,7 +622,7 @@ def main():
         print(f"Clustering took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
         
         start_time = time.time()
-        adata = astrid_annotation(adata, args.output_file, args.input_prefix, outDir)
+        adata = astrid_annotation(adata, args.output_file, args.input_prefix, outDir, species=args.species, skip_annotation=args.skip_cell_typing)
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"Annotation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
@@ -675,7 +679,11 @@ def main():
 
             # check if the adata has authorType inside adata.uns and if not set it to cellTypeMinor
             if "authorType" not in adata.uns:
-                adata.uns["authorType"] = "cellTypeMinor"
+                adata.obs["customAuthorType"]  = "NotAvailable"
+                adata.uns["authorType"] = "customAuthorType"
+            
+            args.author_type = "customAuthorType"
+
 
             start_time = time.time()
             adata = astrid_clustering(adata, args.input_prefix, outDir, cutoff_level=args.cutoff_level)
@@ -707,12 +715,13 @@ def main():
 
             # check if the adata has authorType inside adata.uns and if not set it to cellTypeMinor
             if "authorType" not in adata.uns:
-                adata.uns["authorType"] = "cellTypeMinor"
-            
+                adata.obs["customAuthorType"]  = "NotAvailable"
+                adata.uns["authorType"] = "customAuthorType"
+
             print("Annotation started for the sample " + args.input_prefix)
 
             start_time = time.time()
-            adata = astrid_annotation(adata, args.output_file, args.input_prefix, outDir, args.skip_cell_typing)
+            adata = astrid_annotation(adata, args.output_file, args.input_prefix, outDir, species=args.species, skip_annotation=args.skip_cell_typing)
             end_time = time.time()
             elapsed_time = end_time - start_time
             print(f"Annotation took {int(elapsed_time // 60)} minutes and {elapsed_time % 60:.2f} seconds")
@@ -741,7 +750,8 @@ def main():
 
             # check if the adata has authorType inside adata.uns and if not set it to cellTypeMinor
             if "authorType" not in adata.uns:
-                adata.uns["authorType"] = "cellTypeMinor"
+                adata.obs["customAuthorType"]  = "NotAvailable"
+                adata.uns["authorType"] = "customAuthorType"
 
             print("Validation started for the sample " + args.input_prefix)
             
@@ -784,7 +794,8 @@ def main():
 
             # check if the adata has authorType inside adata.uns and if not set it to cellTypeMinor
             if "authorType" not in adata.uns:
-                adata.uns["authorType"] = "cellTypeMinor"
+                adata.obs["customAuthorType"]  = "NotAvailable"
+                adata.uns["authorType"] = "customAuthorType"
 
             print("Cancer damage estimation started for the sample " + args.input_prefix)
             
